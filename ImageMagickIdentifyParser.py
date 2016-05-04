@@ -4,7 +4,7 @@ import json
 import os
 import re
 import sys
-import xml.dom.minidom
+from xml.dom import minidom
 from xml.etree.ElementTree import ElementTree,SubElement,Element,dump,tostring
 
 
@@ -350,8 +350,10 @@ class ImageMagickIdentifyParser:
         tree = ElementTree(Element('Image'))
         tree.getroot().set('file',Data['children'][0]['value'])
         self.serializeXML(root, tree.getroot())
-        #x = xml.dom.minidom.parseString(tostring(tree.getroot(),encoding='utf8'))
-        return tostring(tree.getroot(),encoding='utf8')
+        # prettify XML and return it
+        unformattedXML = tostring(tree.getroot(),encoding='utf8')
+        reparsedXML = minidom.parseString(unformattedXML)
+        return reparsedXML.toprettyxml(indent="  ")
 
 if __name__ == '__main__':
     import argparse
