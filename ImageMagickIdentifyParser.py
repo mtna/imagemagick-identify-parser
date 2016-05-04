@@ -2,15 +2,11 @@
 import distutils.spawn
 import json
 import os
-import pprint
 import re
 import sys
 import xml.dom.minidom
 from xml.etree.ElementTree import ElementTree,SubElement,Element,dump,tostring
 
-
-
-pp = pprint.PrettyPrinter(indent=2)
 
 
 """
@@ -24,7 +20,7 @@ DICOM image metadata indentation-based parser class
 """
 class ImageMagickIdentifyParser:
 
-    data = None
+    Data = None
     HISTOGRAM_ELEM="HistogramLevel"
     # RE_GROUPED_ENTRY examples:
     # dcm:DeviceSerialNumber
@@ -45,6 +41,7 @@ class ImageMagickIdentifyParser:
         if not checkProgram('identify'):
             raise Exception('[Error] ImageMagick is missing')
 
+        # reset internal data
         self.Data = {}
 
     # adapt the tag name to conform with the XML format
@@ -115,8 +112,6 @@ class ImageMagickIdentifyParser:
         self.treeTransformGroup()
 
     def parseRaw(self, filePath):
-        # reset internal data
-        self.data = {}
         # get identify output
         output = self.runCmd('identify -verbose ' + filePath)
         output = output.decode('iso-8859-1').encode('utf-8')
@@ -148,7 +143,7 @@ class ImageMagickIdentifyParser:
                 if newNode and 'name' in newNode and newNode['name'] == 'Histogram':
                     # if we encounter the histogram node, we turn on histogram parsing mode
                     hm = True
-                    # and we store the level
+                    # and we store the level for all the upcoming histogram lines that follow
                     lh = 1 + newNode['level']
 
             if newNode:
@@ -170,13 +165,13 @@ class ImageMagickIdentifyParser:
                 lp = lc
 
         # store the tree in the class attribute for later use
-        self.data = root
+        self.Data = root
 
     ## Group multiple options with the same 
     ## prefix before the colon into a new parent
     ## having the common prefix as the name
     ##
-    ## for example:
+    ## an example to illustrate this:
     ## <x>
     ##   <p:a></p:a>
     ##   <p:b></p:b>
@@ -191,7 +186,7 @@ class ImageMagickIdentifyParser:
     ##   </p>
     ## </x>
     def treeTransformGroup(self):
-        root = self.data
+        root = self.Data
         stack = []
         stack.append(root)
 
@@ -248,6 +243,9 @@ class ImageMagickIdentifyParser:
 
     # Note: this is only to be used for JSON serialization
     def treeTransformCompact(self, x):
+        # this is basically a rebuilding of the tree in a more compact form.
+        # here is a summary of what this method does:
+        #
         # 1) we transform the tree as follows:
         # we aim to replace the 'children' attribute with either
         # an array or a dictionary, as follows:
@@ -256,8 +254,8 @@ class ImageMagickIdentifyParser:
         # - if at least two children have the same name => we need to store them in an array
         #
         # 2) if a node has no children, and it has no additional attributes, then it
-        # can simply be expressed as {k: v}
-
+        # can be expressed as {k: v}
+        #
         # check if it has no children
         xHasNoChildren = ('children' not in x) or ('children' in x and len(x['children']) == 0)
         # check if it has only basic properties: name,value,parent,children
@@ -329,26 +327,28 @@ class ImageMagickIdentifyParser:
                 xmlRoot.set('n', root['count'])
                 xmlRoot.tag = self.HISTOGRAM_ELEM
                 for k,v in root.iteritems():
-                    # if the value is defined
-                    # and the key is not an internal data key
+                    # guard against undefined values(these are coming from the captures
+                    # in the RE_LINE_HISTO regex, and the xml module will throw exceptions on
+                    # the undefined values, so we want to avoid that)
+                    # and check that the key is not an internal data key
                     if v and k not in ['name','value','parent','children']:
                         xmlRoot.set(k,v)
             else:
                 xmlRoot.text=value
 
     def toJSON(self):
-        data1 = self.data.copy()
+        Data = self.Data.copy()
         # run transformation to compact tree
-        data1 = self.treeTransformCompact(data1)
+        Data = self.treeTransformCompact(Data)
         # serialize to json
-        return json.dumps(data1[2], indent=2)
+        return json.dumps(Data[2], indent=2)
 
     def toXML(self):
-        data = self.data.copy()
-        root = data['children'][0]
+        Data = self.Data.copy()
+        root = Data['children'][0]
         # serialize the root node and return it
         tree = ElementTree(Element('Image'))
-        tree.getroot().set('file',data['children'][0]['value'])
+        tree.getroot().set('file',Data['children'][0]['value'])
         self.serializeXML(root, tree.getroot())
         #x = xml.dom.minidom.parseString(tostring(tree.getroot(),encoding='utf8'))
         return tostring(tree.getroot(),encoding='utf8')
@@ -364,7 +364,7 @@ if __name__ == '__main__':
     o = ImageMagickIdentifyParser()
     o.parse(args.filename)
     if args.raw:
-        print o.data
+        print o.Data
     if args.json:
         print o.toJSON()
     if args.xml:
