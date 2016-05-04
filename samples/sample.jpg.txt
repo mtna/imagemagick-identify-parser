@@ -1,0 +1,85 @@
+Image: ./samples/sample.jpg
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Mime type: image/jpeg
+  Class: DirectClass
+  Geometry: 650x650+0+0
+  Units: Undefined
+  Type: TrueColor
+  Endianess: Undefined
+  Colorspace: sRGB
+  Depth: 8-bit
+  Channel depth:
+    red: 8-bit
+    green: 8-bit
+    blue: 8-bit
+  Channel statistics:
+    Pixels: 422500
+    Red:
+      min: 0 (0)
+      max: 253 (0.992157)
+      mean: 157.565 (0.617902)
+      standard deviation: 40.3432 (0.158209)
+      kurtosis: 0.060044
+      skewness: -0.796383
+      entropy: 0.910851
+    Green:
+      min: 0 (0)
+      max: 252 (0.988235)
+      mean: 155.864 (0.61123)
+      standard deviation: 43.3988 (0.170191)
+      kurtosis: -0.210185
+      skewness: -0.721764
+      entropy: 0.915244
+    Blue:
+      min: 2 (0.00784314)
+      max: 255 (1)
+      mean: 154.038 (0.604071)
+      standard deviation: 49.0998 (0.192548)
+      kurtosis: -0.467885
+      skewness: -0.646499
+      entropy: 0.931708
+  Image statistics:
+    Overall:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 155.822 (0.611068)
+      standard deviation: 44.4291 (0.174232)
+      kurtosis: -0.179762
+      skewness: -0.729663
+      entropy: 0.919268
+  Rendering intent: Perceptual
+  Gamma: 0.454545
+  Chromaticity:
+    red primary: (0.64,0.33)
+    green primary: (0.3,0.6)
+    blue primary: (0.15,0.06)
+    white point: (0.3127,0.329)
+  Background color: white
+  Border color: srgb(223,223,223)
+  Matte color: grey74
+  Transparent color: black
+  Interlace: None
+  Intensity: Undefined
+  Compose: Over
+  Page geometry: 650x650+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  Quality: 92
+  Orientation: Undefined
+  Properties:
+    date:create: 2016-05-04T10:56:12+02:00
+    date:modify: 2016-05-03T18:35:49+02:00
+    jpeg:colorspace: 2
+    jpeg:sampling-factor: 2x2,1x1,1x1
+    signature: 0b0cf69f58670964641014fde856ace3a4c7e9a4b0390776bcf4c173a9ac9824
+  Artifacts:
+    filename: ./samples/sample.jpg
+    verbose: true
+  Tainted: False
+  Filesize: 46.4KB
+  Number pixels: 422K
+  Pixels per second: 422.5GB
+  User time: 0.000u
+  Elapsed time: 0:01.000
+  Version: ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org
