@@ -361,7 +361,8 @@ class ImageMagickIdentifyParser:
     def toIRODS(self):
         Data = self.Data.copy()
         root = Data['children'][0]
-        return self.serializeIRODS(root,"",None)
+        props = self.serializeIRODS(root,"",None) 
+        return props[1:] # drop the first % character
 
     def toJSON(self):
         Data = self.Data.copy()
