@@ -336,6 +336,33 @@ class ImageMagickIdentifyParser:
             else:
                 xmlRoot.text=value
 
+    def serializeIRODS(self,root,props,parent):
+        name = root['name']
+        name = self.normalizeName(name)
+        name = name.decode('utf-8')
+        if parent:
+        	name = parent+"."+name
+        value = root['value']
+        value = value.decode('utf-8')
+        ret = props
+		
+        # serialize the property
+        if 'children' in root and len(root['children']) > 0:
+            for c in root['children']:
+               	ret += self.serializeIRODS(c,props,name)
+        else:
+            if root['name'] == self.HISTOGRAM_ELEM:
+            	# don't serialize histogram
+            	pass
+            else:
+                ret += "%"+name+"="+value
+        return ret
+
+    def toIRODS(self):
+        Data = self.Data.copy()
+        root = Data['children'][0]
+        return self.serializeIRODS(root,"",None)
+
     def toJSON(self):
         Data = self.Data.copy()
         # run transformation to compact tree
@@ -359,15 +386,18 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description='DICOM image metadata convertor')
     parser.add_argument("-i", dest="filename", required=True, help="input file")
-    parser.add_argument('--raw' , '-r', dest='raw', action='store_true')
+    parser.add_argument('--irods' , '-ir',dest='irods', action='store_true')
     parser.add_argument('--json', '-j', dest='json', action='store_true')
+    parser.add_argument('--raw' , '-r', dest='raw', action='store_true')
     parser.add_argument('--xml' , '-x', dest='xml', action='store_true')
     args = parser.parse_args()
     o = ImageMagickIdentifyParser()
     o.parse(args.filename)
-    if args.raw:
-        print o.Data
+    if args.irods:
+        print o.toIRODS()
     if args.json:
         print o.toJSON()
+    if args.raw:
+        print o.Data
     if args.xml:
         print o.toXML()
