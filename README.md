@@ -1,4 +1,4 @@
-# and
+# imagemagick-identify-parser
 
 ### v0.9-beta
 
