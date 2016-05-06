@@ -429,7 +429,7 @@ if __name__ == '__main__':
         print o.toJSON()
     elif args.type == 'irods':
         print o.toIRODS()
-    elif args.type == 'irods':
+    elif args.type == 'raw':
         print o.Data
     elif args.type == 'xml':
         print o.toXML()
