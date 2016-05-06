@@ -41,7 +41,7 @@ import lxml.etree as etree
 from xml.etree.ElementTree import ElementTree,SubElement,Element,dump,tostring
 
 __doc__ = """ 
-This module provides a two-pass indentation-based parser that parsers
+This module provides a indentation-based parser that parses
 the metadata provided by ImageMagick's utility called 'identify'.
 
 The code can be used both as a module or as a command.
@@ -499,4 +499,3 @@ if __name__ == '__main__':
         print o.toXML()
     else:
         print "Invalid type specified:" + args.type
-# 	   
