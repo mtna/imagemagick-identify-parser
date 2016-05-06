@@ -1,6 +1,6 @@
 # imagemagick-identify-parser
 
-### v0.9-beta
+### v1.0-RC1
 
 ## Overview
 The [ImageMagick](http://imagemagick.org) software suite [`identify`](http://imagemagick.org/script/identify.php) tool, when used with the `-verbose` option, provides comprehensive information about an image. While the resulting text output is clear and concise, it is not particularly well suited for machine consumption.
