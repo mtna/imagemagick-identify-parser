@@ -1,4 +1,4 @@
-<Image file="/var/tmp/magick-8073tqgTp5B2UO3x">
+<Image file="/var/tmp/magick-31512nf_D5IHXyJkn">
   <BaseFilename>sample.dcm</BaseFilename>
   <Format>J2K (JPEG-2000 Code Stream Syntax)</Format>
   <MimeType>image/jp2</MimeType>
@@ -384,8 +384,8 @@
   <Properties>
     <signature>3729e110c4de124d348324bc4d25ca4ef540812b1959fda6934d392e0c4b80d3</signature>
     <date>
-      <create>2016-05-05T23:08:32+02:00</create>
-      <modify>2016-05-05T23:08:32+02:00</modify>
+      <create>2016-05-06T08:28:14+02:00</create>
+      <modify>2016-05-06T08:28:14+02:00</modify>
     </date>
     <dcm>
       <AcquisitionDate>20040305</AcquisitionDate>
@@ -459,7 +459,7 @@
     </dcm>
   </Properties>
   <Artifacts>
-    <filename>samples/sample.dcm</filename>
+    <filename>./samples/sample.dcm</filename>
     <verbose>true</verbose>
   </Artifacts>
   <Tainted>False</Tainted>

@@ -12,7 +12,7 @@
     "Compose": "Over", 
     "Tainted": "False", 
     "Filesize": "73.2KB", 
-    "Pixels per second": "87.382GB", 
+    "Pixels per second": "65.536GB", 
     "Units": "Undefined", 
     "Number pixels": "262K", 
     "Type": "Grayscale", 
@@ -5152,8 +5152,8 @@
     "Endianess": "Undefined", 
     "Properties": {
       "date": {
-        "create": "2016-05-04T11:17:55+02:00", 
-        "modify": "2016-05-04T11:17:55+02:00"
+        "create": "2016-05-06T08:28:14+02:00", 
+        "modify": "2016-05-06T08:28:14+02:00"
       }, 
       "dcm": {
         "MediaStorageSOPInstanceUID": "1.3.12.2.1107.5.2.5.11090.5.0.5823661031981777", 

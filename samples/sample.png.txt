@@ -92,7 +92,7 @@ Image: ./samples/sample.png
   Tainted: False
   Filesize: 326KB
   Number pixels: 144K
-  Pixels per second: 71.762GB
+  Pixels per second: 143.52GB
   User time: 0.000u
   Elapsed time: 0:01.000
   Version: ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org

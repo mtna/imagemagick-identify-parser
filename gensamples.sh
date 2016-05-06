@@ -14,7 +14,7 @@ echo "Generating samples...."
 #OPT="2>/dev/null >/dev/null"
 OPT=""
 
-for f in $(find ./samples/sample.* -type f -regex '.*\.\(dcm\|jpg\|jpeg\|png\|gif\)'); do
+for f in $(find ./samples -type f \( -iname \*.dcm -o -iname \*.jpg -o -iname \*.png \)); do
     identify -verbose $f > "$f.txt"
     python ImageMagickIdentifyParser.py -t xml $f > "$f.xml"
     python ImageMagickIdentifyParser.py -t json $f > "$f.json"
