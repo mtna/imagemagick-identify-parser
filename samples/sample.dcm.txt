@@ -1,4 +1,4 @@
-Image: /var/tmp/magick-315108n1xynkER2Rp
+Image: /var/tmp/magick-332037-h8Ubb96eMS
   Base filename: sample.dcm
   Format: J2K (JPEG-2000 Code Stream Syntax)
   Mime type: image/jp2
@@ -378,8 +378,8 @@ Image: /var/tmp/magick-315108n1xynkER2Rp
   Compression: JPEG2000
   Orientation: Undefined
   Properties:
-    date:create: 2016-05-06T08:28:14+02:00
-    date:modify: 2016-05-06T08:28:14+02:00
+    date:create: 2016-05-06T09:35:16+02:00
+    date:modify: 2016-05-06T09:35:16+02:00
     dcm:AcquisitionDate: 20040305
     dcm:AcquisitionTime: 085939.762492 
     dcm:DeviceSerialNumber: 11090

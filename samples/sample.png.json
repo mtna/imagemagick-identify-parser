@@ -1,90 +1,85 @@
 {
   "Image": {
-    "Border color": "srgb(223,223,223)", 
-    "Compression": "Zip", 
-    "Matte color": "grey74", 
     "Artifacts": {
-      "verbose": "true", 
-      "filename": "./samples/sample.png"
+      "filename": "./samples/sample.png", 
+      "verbose": "true"
     }, 
-    "Dispose": "Undefined", 
-    "Interlace": "None", 
-    "Compose": "Over", 
-    "Tainted": "False", 
-    "Filesize": "326KB", 
-    "Pixels per second": "0B", 
-    "Units": "Undefined", 
-    "Chromaticity": {
-      "red primary": "(0.64,0.33)", 
-      "green primary": "(0.3,0.6)", 
-      "blue primary": "(0.15,0.06)", 
-      "white point": "(0.3127,0.329)"
-    }, 
-    "Type": "TrueColor", 
-    "Print size": "4.625x5.98611", 
-    "Channel depth": {
+    "BackgroundColor": "white", 
+    "BorderColor": "srgb(223,223,223)", 
+    "ChannelDepth": {
       "blue": "8-bit", 
       "green": "8-bit", 
       "red": "8-bit"
     }, 
-    "Background color": "white", 
-    "Transparent color": "black", 
-    "Format": "PNG (Portable Network Graphics)", 
-    "Elapsed time": "0:01.000", 
-    "Image statistics": {
-      "Overall": {
-        "skewness": "0.738545", 
-        "min": "0 (0)", 
-        "max": "255 (1)", 
-        "entropy": "0.931729", 
-        "standard deviation": "45.3849 (0.17798)", 
-        "kurtosis": "1.17497", 
-        "mean": "78.4595 (0.307684)"
-      }
-    }, 
-    "Number pixels": "144K", 
-    "Channel statistics": {
+    "ChannelStatistics": {
       "Blue": {
-        "skewness": "0.939468", 
-        "min": "0 (0)", 
-        "max": "219 (0.858824)", 
         "entropy": "0.917094", 
-        "standard deviation": "42.2194 (0.165566)", 
         "kurtosis": "0.717383", 
-        "mean": "55.5649 (0.217901)"
+        "max": "219 (0.858824)", 
+        "mean": "55.5649 (0.217901)", 
+        "min": "0 (0)", 
+        "skewness": "0.939468", 
+        "standardDeviation": "42.2194 (0.165566)"
       }, 
       "Green": {
-        "skewness": "0.654878", 
-        "min": "0 (0)", 
-        "max": "250 (0.980392)", 
         "entropy": "0.934257", 
-        "standard deviation": "45.9033 (0.180013)", 
         "kurtosis": "0.366151", 
-        "mean": "80.1838 (0.314446)"
+        "max": "250 (0.980392)", 
+        "mean": "80.1838 (0.314446)", 
+        "min": "0 (0)", 
+        "skewness": "0.654878", 
+        "standardDeviation": "45.9033 (0.180013)"
       }, 
       "Pixels": "143523", 
       "Red": {
-        "skewness": "0.380512", 
-        "min": "0 (0)", 
-        "max": "255 (1)", 
         "entropy": "0.943836", 
-        "standard deviation": "47.8515 (0.187653)", 
         "kurtosis": "0.168761", 
-        "mean": "99.6297 (0.390705)"
+        "max": "255 (1)", 
+        "mean": "99.6297 (0.390705)", 
+        "min": "0 (0)", 
+        "skewness": "0.380512", 
+        "standardDeviation": "47.8515 (0.187653)"
       }
     }, 
+    "Chromaticity": {
+      "bluePrimary": "(0.15,0.06)", 
+      "greenPrimary": "(0.3,0.6)", 
+      "redPrimary": "(0.64,0.33)", 
+      "whitePoint": "(0.3127,0.329)"
+    }, 
     "Class": "DirectClass", 
-    "Mime type": "image/png", 
-    "Page geometry": "333x431+0+0", 
-    "Geometry": "333x431+0+0", 
     "Colorspace": "sRGB", 
+    "Compose": "Over", 
+    "Compression": "Zip", 
     "Depth": "8-bit", 
-    "User time": "0.000u", 
-    "Rendering intent": "Perceptual", 
-    "Resolution": "72x72", 
-    "Gamma": "0.45455", 
-    "Orientation": "Undefined", 
+    "Dispose": "Undefined", 
+    "ElapsedTime": "0:01.000", 
     "Endianess": "Undefined", 
+    "Filesize": "326KB", 
+    "Format": "PNG (Portable Network Graphics)", 
+    "Gamma": "0.45455", 
+    "Geometry": "333x431+0+0", 
+    "ImageStatistics": {
+      "Overall": {
+        "entropy": "0.931729", 
+        "kurtosis": "1.17497", 
+        "max": "255 (1)", 
+        "mean": "78.4595 (0.307684)", 
+        "min": "0 (0)", 
+        "skewness": "0.738545", 
+        "standardDeviation": "45.3849 (0.17798)"
+      }
+    }, 
+    "Intensity": "Undefined", 
+    "Interlace": "None", 
+    "Iterations": "0", 
+    "MatteColor": "grey74", 
+    "MimeType": "image/png", 
+    "NumberPixels": "144K", 
+    "Orientation": "Undefined", 
+    "PageGeometry": "333x431+0+0", 
+    "PixelsPerSecond": "143.53GB", 
+    "PrintSize": "4.625x5.98611", 
     "Properties": {
       "date": {
         "create": "2016-05-04T10:56:12+02:00", 
@@ -92,26 +87,31 @@
       }, 
       "jpeg": {
         "colorspace": "2", 
-        "sampling-factor": "2x2,1x1,1x1"
+        "samplingFactor": "2x2,1x1,1x1"
       }, 
       "png": {
+        "IHDRBitDepth": "8", 
+        "IHDRBitDepthOrig": "8", 
+        "IHDRColorType": "2 (Truecolor)", 
+        "IHDRColorTypeOrig": "2", 
+        "IHDRInterlaceMethod": "0 (Not interlaced)", 
+        "IHDRWidthHeight": "333, 431", 
         "bKGD": "chunk was found (see Background color, above)", 
-        "pHYs": "x_res=72, y_res=72, units=0", 
-        "IHDR.interlace_method": "0 (Not interlaced)", 
-        "IHDR.width,height": "333, 431", 
-        "text": "4 tEXt/zTXt/iTXt chunks were found", 
-        "IHDR.color_type": "2 (Truecolor)", 
-        "IHDR.bit-depth-orig": "8", 
-        "sRGB": "intent=0 (Perceptual Intent)", 
-        "gAMA": "gamma=0.45455 (See Gamma, above)", 
-        "IHDR.color-type-orig": "2", 
         "cHRM": "chunk was found (see Chromaticity, above)", 
-        "IHDR.bit_depth": "8"
+        "gAMA": "gamma=0.45455 (See Gamma, above)", 
+        "pHYs": "x_res=72, y_res=72, units=0", 
+        "sRGB": "intent=0 (Perceptual Intent)", 
+        "text": "4 tEXt/zTXt/iTXt chunks were found"
       }, 
       "signature": "1987a48dd74ac5fcdd053817ce5d7bb5950948fc48594969f31d89bea9687d12"
     }, 
-    "Intensity": "Undefined", 
-    "Version": "ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org", 
-    "Iterations": "0"
+    "RenderingIntent": "Perceptual", 
+    "Resolution": "72x72", 
+    "Tainted": "False", 
+    "TransparentColor": "black", 
+    "Type": "TrueColor", 
+    "Units": "Undefined", 
+    "UserTime": "0.000u", 
+    "Version": "ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org"
   }
 }
