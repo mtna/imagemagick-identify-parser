@@ -5,7 +5,7 @@
 ## Overview
 The [ImageMagick](http://imagemagick.org) software suite [`identify`](http://imagemagick.org/script/identify.php) tool, when used with the `-verbose` option, provides comprehensive information about an image. While the resulting text output is clear and concise, it is not particularly well suited for machine consumption.
 
-This Python `ImageMagickIdentifyParser` utility class can be used to call or parse the `identify -verbose <image>` tool text output and converts it into various formats such as JSON or XML for further reuse by code or applications.
+This Python 2.x`ImageMagickIdentifyParser` utility class can be used to call or parse the `identify -verbose <image>` tool text output and converts it into various formats such as JSON or XML for further reuse by code or applications.
 
 Note that:
 *  You will need [ImageMagick](http://imagemagick.org) to be installed on your system in order to use this utility.
@@ -14,7 +14,7 @@ Note that:
 ## Install
 
     sudo apt-get install imagemagick
-    pip install --user -r requirements.txt
+    pip install --user -r dependencies.txt
 
 ## Usage
 
