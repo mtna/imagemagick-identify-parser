@@ -1,0 +1,5234 @@
+{
+  "Image": {
+    "Border color": "gray(223)", 
+    "Compression": "JPEG2000", 
+    "Matte color": "gray(189)", 
+    "Artifacts": {
+      "verbose": "true", 
+      "filename": "samples/sample.dcm"
+    }, 
+    "Dispose": "Undefined", 
+    "Interlace": "None", 
+    "Compose": "Over", 
+    "Tainted": "False", 
+    "Filesize": "73.2KB", 
+    "Pixels per second": "65.536GB", 
+    "Units": "Undefined", 
+    "Number pixels": "262K", 
+    "Type": "Grayscale", 
+    "Channel depth": {
+      "gray": "9-bit"
+    }, 
+    "Background color": "gray(255)", 
+    "Transparent color": "gray(0)", 
+    "Format": "J2K (JPEG-2000 Code Stream Syntax)", 
+    "Elapsed time": "0:01.000", 
+    "Intensity": "Undefined", 
+    "Histogram": [
+      {
+        "HistogramLevel": {
+          "count": "6709", 
+          "gray": "0", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "0", 
+          "colname": "gray", 
+          "gval": "0", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "000000000000", 
+          "bval": "0"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "16680", 
+          "gray": "0.195315", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "128", 
+          "colname": "gray", 
+          "gval": "128", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "008000800080", 
+          "bval": "128"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "25206", 
+          "gray": "0.390631", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "256", 
+          "colname": "gray", 
+          "gval": "256", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "010001000100", 
+          "bval": "256"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "30489", 
+          "gray": "0.587472", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "385", 
+          "colname": "gray", 
+          "gval": "385", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "018101810181", 
+          "bval": "385"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "31519", 
+          "gray": "0.782788", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "513", 
+          "colname": "gray", 
+          "gval": "513", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "020102010201", 
+          "bval": "513"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "29796", 
+          "gray": "0.978103", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "641", 
+          "colname": "gray", 
+          "gval": "641", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "028102810281", 
+          "bval": "641"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "26284", 
+          "gray": "1.17342", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "769", 
+          "colname": "gray", 
+          "gval": "769", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "030103010301", 
+          "bval": "769"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "21162", 
+          "gray": "1.37026", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "898", 
+          "colname": "gray", 
+          "gval": "898", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "038203820382", 
+          "bval": "898"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "16292", 
+          "gray": "1.56558", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "1026", 
+          "colname": "gray", 
+          "gval": "1026", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "040204020402", 
+          "bval": "1026"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "11918", 
+          "gray": "1.76089", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "1154", 
+          "colname": "gray", 
+          "gval": "1154", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "048204820482", 
+          "bval": "1154"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "8192", 
+          "gray": "1.95621", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "1282", 
+          "colname": "gray", 
+          "gval": "1282", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "050205020502", 
+          "bval": "1282"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "5193", 
+          "gray": "2.15305", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "1411", 
+          "colname": "gray", 
+          "gval": "1411", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "058305830583", 
+          "bval": "1411"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "3264", 
+          "gray": "2.34836", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "1539", 
+          "colname": "gray", 
+          "gval": "1539", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "060306030603", 
+          "bval": "1539"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "1979", 
+          "gray": "2.54368", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "1667", 
+          "colname": "gray", 
+          "gval": "1667", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "068306830683", 
+          "bval": "1667"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "1220", 
+          "gray": "2.73899", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "1795", 
+          "colname": "gray", 
+          "gval": "1795", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "070307030703", 
+          "bval": "1795"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "779", 
+          "gray": "2.93584", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "1924", 
+          "colname": "gray", 
+          "gval": "1924", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "078407840784", 
+          "bval": "1924"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "485", 
+          "gray": "3.13115", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "2052", 
+          "colname": "gray", 
+          "gval": "2052", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "080408040804", 
+          "bval": "2052"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "327", 
+          "gray": "3.32647", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "2180", 
+          "colname": "gray", 
+          "gval": "2180", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "088408840884", 
+          "bval": "2180"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "293", 
+          "gray": "3.52178", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "2308", 
+          "colname": "gray", 
+          "gval": "2308", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "090409040904", 
+          "bval": "2308"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "249", 
+          "gray": "3.71862", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "2437", 
+          "colname": "gray", 
+          "gval": "2437", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "098509850985", 
+          "bval": "2437"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "216", 
+          "gray": "3.91394", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "2565", 
+          "colname": "gray", 
+          "gval": "2565", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "0A050A050A05", 
+          "bval": "2565"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "187", 
+          "gray": "4.10925", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "2693", 
+          "colname": "gray", 
+          "gval": "2693", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "0A850A850A85", 
+          "bval": "2693"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "175", 
+          "gray": "4.30457", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "2821", 
+          "colname": "gray", 
+          "gval": "2821", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "0B050B050B05", 
+          "bval": "2821"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "178", 
+          "gray": "4.50141", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "2950", 
+          "colname": "gray", 
+          "gval": "2950", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "0B860B860B86", 
+          "bval": "2950"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "173", 
+          "gray": "4.69673", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "3078", 
+          "colname": "gray", 
+          "gval": "3078", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "0C060C060C06", 
+          "bval": "3078"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "173", 
+          "gray": "4.89204", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "3206", 
+          "colname": "gray", 
+          "gval": "3206", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "0C860C860C86", 
+          "bval": "3206"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "157", 
+          "gray": "5.08736", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "3334", 
+          "colname": "gray", 
+          "gval": "3334", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "0D060D060D06", 
+          "bval": "3334"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "158", 
+          "gray": "5.2842", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "3463", 
+          "colname": "gray", 
+          "gval": "3463", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "0D870D870D87", 
+          "bval": "3463"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "188", 
+          "gray": "5.47951", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "3591", 
+          "colname": "gray", 
+          "gval": "3591", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "0E070E070E07", 
+          "bval": "3591"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "135", 
+          "gray": "5.67483", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "3719", 
+          "colname": "gray", 
+          "gval": "3719", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "0E870E870E87", 
+          "bval": "3719"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "128", 
+          "gray": "5.87015", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "3847", 
+          "colname": "gray", 
+          "gval": "3847", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "0F070F070F07", 
+          "bval": "3847"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "144", 
+          "gray": "6.06699", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "3976", 
+          "colname": "gray", 
+          "gval": "3976", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "0F880F880F88", 
+          "bval": "3976"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "127", 
+          "gray": "6.2623", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "4104", 
+          "colname": "gray", 
+          "gval": "4104", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "100810081008", 
+          "bval": "4104"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "138", 
+          "gray": "6.45762", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "4232", 
+          "colname": "gray", 
+          "gval": "4232", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "108810881088", 
+          "bval": "4232"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "140", 
+          "gray": "6.65293", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "4360", 
+          "colname": "gray", 
+          "gval": "4360", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "110811081108", 
+          "bval": "4360"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "143", 
+          "gray": "6.84977", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "4489", 
+          "colname": "gray", 
+          "gval": "4489", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "118911891189", 
+          "bval": "4489"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "151", 
+          "gray": "7.04509", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "4617", 
+          "colname": "gray", 
+          "gval": "4617", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "120912091209", 
+          "bval": "4617"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "146", 
+          "gray": "7.24041", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "4745", 
+          "colname": "gray", 
+          "gval": "4745", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "128912891289", 
+          "bval": "4745"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "147", 
+          "gray": "7.43572", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "4873", 
+          "colname": "gray", 
+          "gval": "4873", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "130913091309", 
+          "bval": "4873"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "169", 
+          "gray": "7.63256", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "5002", 
+          "colname": "gray", 
+          "gval": "5002", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "138A138A138A", 
+          "bval": "5002"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "170", 
+          "gray": "7.82788", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "5130", 
+          "colname": "gray", 
+          "gval": "5130", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "140A140A140A", 
+          "bval": "5130"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "166", 
+          "gray": "8.02319", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "5258", 
+          "colname": "gray", 
+          "gval": "5258", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "148A148A148A", 
+          "bval": "5258"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "154", 
+          "gray": "8.21851", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "5386", 
+          "colname": "gray", 
+          "gval": "5386", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "150A150A150A", 
+          "bval": "5386"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "147", 
+          "gray": "8.41535", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "5515", 
+          "colname": "gray", 
+          "gval": "5515", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "158B158B158B", 
+          "bval": "5515"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "162", 
+          "gray": "8.61067", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "5643", 
+          "colname": "gray", 
+          "gval": "5643", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "160B160B160B", 
+          "bval": "5643"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "181", 
+          "gray": "8.80598", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "5771", 
+          "colname": "gray", 
+          "gval": "5771", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "168B168B168B", 
+          "bval": "5771"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "174", 
+          "gray": "9.0013", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "5899", 
+          "colname": "gray", 
+          "gval": "5899", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "170B170B170B", 
+          "bval": "5899"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "173", 
+          "gray": "9.19814", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "6028", 
+          "colname": "gray", 
+          "gval": "6028", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "178C178C178C", 
+          "bval": "6028"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "173", 
+          "gray": "9.39345", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "6156", 
+          "colname": "gray", 
+          "gval": "6156", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "180C180C180C", 
+          "bval": "6156"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "171", 
+          "gray": "9.58877", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "6284", 
+          "colname": "gray", 
+          "gval": "6284", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "188C188C188C", 
+          "bval": "6284"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "156", 
+          "gray": "9.78408", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "6412", 
+          "colname": "gray", 
+          "gval": "6412", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "190C190C190C", 
+          "bval": "6412"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "128", 
+          "gray": "9.98093", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "6541", 
+          "colname": "gray", 
+          "gval": "6541", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "198D198D198D", 
+          "bval": "6541"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "182", 
+          "gray": "10.1762", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "6669", 
+          "colname": "gray", 
+          "gval": "6669", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "1A0D1A0D1A0D", 
+          "bval": "6669"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "184", 
+          "gray": "10.3716", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "6797", 
+          "colname": "gray", 
+          "gval": "6797", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "1A8D1A8D1A8D", 
+          "bval": "6797"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "184", 
+          "gray": "10.5669", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "6925", 
+          "colname": "gray", 
+          "gval": "6925", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "1B0D1B0D1B0D", 
+          "bval": "6925"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "158", 
+          "gray": "10.7637", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "7054", 
+          "colname": "gray", 
+          "gval": "7054", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "1B8E1B8E1B8E", 
+          "bval": "7054"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "176", 
+          "gray": "10.959", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "7182", 
+          "colname": "gray", 
+          "gval": "7182", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "1C0E1C0E1C0E", 
+          "bval": "7182"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "180", 
+          "gray": "11.1543", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "7310", 
+          "colname": "gray", 
+          "gval": "7310", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "1C8E1C8E1C8E", 
+          "bval": "7310"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "158", 
+          "gray": "11.3497", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "7438", 
+          "colname": "gray", 
+          "gval": "7438", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "1D0E1D0E1D0E", 
+          "bval": "7438"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "135", 
+          "gray": "11.5465", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "7567", 
+          "colname": "gray", 
+          "gval": "7567", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "1D8F1D8F1D8F", 
+          "bval": "7567"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "150", 
+          "gray": "11.7418", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "7695", 
+          "colname": "gray", 
+          "gval": "7695", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "1E0F1E0F1E0F", 
+          "bval": "7695"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "156", 
+          "gray": "11.9371", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "7823", 
+          "colname": "gray", 
+          "gval": "7823", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "1E8F1E8F1E8F", 
+          "bval": "7823"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "154", 
+          "gray": "12.1324", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "7951", 
+          "colname": "gray", 
+          "gval": "7951", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "1F0F1F0F1F0F", 
+          "bval": "7951"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "129", 
+          "gray": "12.3293", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "8080", 
+          "colname": "gray", 
+          "gval": "8080", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "1F901F901F90", 
+          "bval": "8080"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "134", 
+          "gray": "12.5246", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "8208", 
+          "colname": "gray", 
+          "gval": "8208", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "201020102010", 
+          "bval": "8208"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "142", 
+          "gray": "12.7199", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "8336", 
+          "colname": "gray", 
+          "gval": "8336", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "209020902090", 
+          "bval": "8336"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "156", 
+          "gray": "12.9152", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "8464", 
+          "colname": "gray", 
+          "gval": "8464", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "211021102110", 
+          "bval": "8464"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "155", 
+          "gray": "13.1121", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "8593", 
+          "colname": "gray", 
+          "gval": "8593", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "219121912191", 
+          "bval": "8593"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "130", 
+          "gray": "13.3074", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "8721", 
+          "colname": "gray", 
+          "gval": "8721", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "221122112211", 
+          "bval": "8721"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "113", 
+          "gray": "13.5027", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "8849", 
+          "colname": "gray", 
+          "gval": "8849", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "229122912291", 
+          "bval": "8849"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "128", 
+          "gray": "13.698", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "8977", 
+          "colname": "gray", 
+          "gval": "8977", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "231123112311", 
+          "bval": "8977"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "142", 
+          "gray": "13.8949", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "9106", 
+          "colname": "gray", 
+          "gval": "9106", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "239223922392", 
+          "bval": "9106"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "135", 
+          "gray": "14.0902", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "9234", 
+          "colname": "gray", 
+          "gval": "9234", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "241224122412", 
+          "bval": "9234"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "118", 
+          "gray": "14.2855", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "9362", 
+          "colname": "gray", 
+          "gval": "9362", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "249224922492", 
+          "bval": "9362"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "116", 
+          "gray": "14.4808", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "9490", 
+          "colname": "gray", 
+          "gval": "9490", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "251225122512", 
+          "bval": "9490"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "113", 
+          "gray": "14.6777", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "9619", 
+          "colname": "gray", 
+          "gval": "9619", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "259325932593", 
+          "bval": "9619"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "114", 
+          "gray": "14.873", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "9747", 
+          "colname": "gray", 
+          "gval": "9747", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "261326132613", 
+          "bval": "9747"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "118", 
+          "gray": "15.0683", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "9875", 
+          "colname": "gray", 
+          "gval": "9875", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "269326932693", 
+          "bval": "9875"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "99", 
+          "gray": "15.2636", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "10003", 
+          "colname": "gray", 
+          "gval": "10003", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "271327132713", 
+          "bval": "10003"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "101", 
+          "gray": "15.4604", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "10132", 
+          "colname": "gray", 
+          "gval": "10132", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "279427942794", 
+          "bval": "10132"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "84", 
+          "gray": "15.6558", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "10260", 
+          "colname": "gray", 
+          "gval": "10260", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "281428142814", 
+          "bval": "10260"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "90", 
+          "gray": "15.8511", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "10388", 
+          "colname": "gray", 
+          "gval": "10388", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "289428942894", 
+          "bval": "10388"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "84", 
+          "gray": "16.0464", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "10516", 
+          "colname": "gray", 
+          "gval": "10516", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "291429142914", 
+          "bval": "10516"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "76", 
+          "gray": "16.2432", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "10645", 
+          "colname": "gray", 
+          "gval": "10645", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "299529952995", 
+          "bval": "10645"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "82", 
+          "gray": "16.4385", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "10773", 
+          "colname": "gray", 
+          "gval": "10773", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "2A152A152A15", 
+          "bval": "10773"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "77", 
+          "gray": "16.6339", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "10901", 
+          "colname": "gray", 
+          "gval": "10901", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "2A952A952A95", 
+          "bval": "10901"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "69", 
+          "gray": "16.8292", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "11029", 
+          "colname": "gray", 
+          "gval": "11029", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "2B152B152B15", 
+          "bval": "11029"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "87", 
+          "gray": "17.026", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "11158", 
+          "colname": "gray", 
+          "gval": "11158", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "2B962B962B96", 
+          "bval": "11158"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "82", 
+          "gray": "17.2213", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "11286", 
+          "colname": "gray", 
+          "gval": "11286", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "2C162C162C16", 
+          "bval": "11286"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "74", 
+          "gray": "17.4166", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "11414", 
+          "colname": "gray", 
+          "gval": "11414", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "2C962C962C96", 
+          "bval": "11414"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "90", 
+          "gray": "17.612", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "11542", 
+          "colname": "gray", 
+          "gval": "11542", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "2D162D162D16", 
+          "bval": "11542"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "64", 
+          "gray": "17.8088", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "11671", 
+          "colname": "gray", 
+          "gval": "11671", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "2D972D972D97", 
+          "bval": "11671"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "95", 
+          "gray": "18.0041", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "11799", 
+          "colname": "gray", 
+          "gval": "11799", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "2E172E172E17", 
+          "bval": "11799"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "63", 
+          "gray": "18.1994", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "11927", 
+          "colname": "gray", 
+          "gval": "11927", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "2E972E972E97", 
+          "bval": "11927"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "95", 
+          "gray": "18.3948", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "12055", 
+          "colname": "gray", 
+          "gval": "12055", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "2F172F172F17", 
+          "bval": "12055"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "88", 
+          "gray": "18.5916", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "12184", 
+          "colname": "gray", 
+          "gval": "12184", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "2F982F982F98", 
+          "bval": "12184"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "75", 
+          "gray": "18.7869", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "12312", 
+          "colname": "gray", 
+          "gval": "12312", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "301830183018", 
+          "bval": "12312"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "69", 
+          "gray": "18.9822", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "12440", 
+          "colname": "gray", 
+          "gval": "12440", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "309830983098", 
+          "bval": "12440"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "77", 
+          "gray": "19.1775", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "12568", 
+          "colname": "gray", 
+          "gval": "12568", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "311831183118", 
+          "bval": "12568"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "98", 
+          "gray": "19.3744", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "12697", 
+          "colname": "gray", 
+          "gval": "12697", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "319931993199", 
+          "bval": "12697"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "70", 
+          "gray": "19.5697", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "12825", 
+          "colname": "gray", 
+          "gval": "12825", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "321932193219", 
+          "bval": "12825"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "68", 
+          "gray": "19.765", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "12953", 
+          "colname": "gray", 
+          "gval": "12953", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "329932993299", 
+          "bval": "12953"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "78", 
+          "gray": "19.9603", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "13081", 
+          "colname": "gray", 
+          "gval": "13081", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "331933193319", 
+          "bval": "13081"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "84", 
+          "gray": "20.1572", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "13210", 
+          "colname": "gray", 
+          "gval": "13210", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "339A339A339A", 
+          "bval": "13210"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "97", 
+          "gray": "20.3525", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "13338", 
+          "colname": "gray", 
+          "gval": "13338", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "341A341A341A", 
+          "bval": "13338"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "83", 
+          "gray": "20.5478", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "13466", 
+          "colname": "gray", 
+          "gval": "13466", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "349A349A349A", 
+          "bval": "13466"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "93", 
+          "gray": "20.7431", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "13594", 
+          "colname": "gray", 
+          "gval": "13594", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "351A351A351A", 
+          "bval": "13594"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "88", 
+          "gray": "20.94", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "13723", 
+          "colname": "gray", 
+          "gval": "13723", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "359B359B359B", 
+          "bval": "13723"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "91", 
+          "gray": "21.1353", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "13851", 
+          "colname": "gray", 
+          "gval": "13851", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "361B361B361B", 
+          "bval": "13851"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "108", 
+          "gray": "21.3306", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "13979", 
+          "colname": "gray", 
+          "gval": "13979", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "369B369B369B", 
+          "bval": "13979"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "100", 
+          "gray": "21.5259", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "14107", 
+          "colname": "gray", 
+          "gval": "14107", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "371B371B371B", 
+          "bval": "14107"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "96", 
+          "gray": "21.7227", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "14236", 
+          "colname": "gray", 
+          "gval": "14236", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "379C379C379C", 
+          "bval": "14236"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "93", 
+          "gray": "21.9181", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "14364", 
+          "colname": "gray", 
+          "gval": "14364", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "381C381C381C", 
+          "bval": "14364"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "102", 
+          "gray": "22.1134", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "14492", 
+          "colname": "gray", 
+          "gval": "14492", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "389C389C389C", 
+          "bval": "14492"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "116", 
+          "gray": "22.3087", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "14620", 
+          "colname": "gray", 
+          "gval": "14620", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "391C391C391C", 
+          "bval": "14620"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "105", 
+          "gray": "22.5055", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "14749", 
+          "colname": "gray", 
+          "gval": "14749", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "399D399D399D", 
+          "bval": "14749"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "99", 
+          "gray": "22.7008", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "14877", 
+          "colname": "gray", 
+          "gval": "14877", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "3A1D3A1D3A1D", 
+          "bval": "14877"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "116", 
+          "gray": "22.8962", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "15005", 
+          "colname": "gray", 
+          "gval": "15005", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "3A9D3A9D3A9D", 
+          "bval": "15005"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "111", 
+          "gray": "23.0915", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "15133", 
+          "colname": "gray", 
+          "gval": "15133", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "3B1D3B1D3B1D", 
+          "bval": "15133"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "86", 
+          "gray": "23.2883", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "15262", 
+          "colname": "gray", 
+          "gval": "15262", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "3B9E3B9E3B9E", 
+          "bval": "15262"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "101", 
+          "gray": "23.4836", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "15390", 
+          "colname": "gray", 
+          "gval": "15390", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "3C1E3C1E3C1E", 
+          "bval": "15390"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "106", 
+          "gray": "23.679", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "15518", 
+          "colname": "gray", 
+          "gval": "15518", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "3C9E3C9E3C9E", 
+          "bval": "15518"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "100", 
+          "gray": "23.8743", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "15646", 
+          "colname": "gray", 
+          "gval": "15646", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "3D1E3D1E3D1E", 
+          "bval": "15646"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "112", 
+          "gray": "24.0711", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "15775", 
+          "colname": "gray", 
+          "gval": "15775", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "3D9F3D9F3D9F", 
+          "bval": "15775"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "107", 
+          "gray": "24.2664", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "15903", 
+          "colname": "gray", 
+          "gval": "15903", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "3E1F3E1F3E1F", 
+          "bval": "15903"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "90", 
+          "gray": "24.4617", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "16031", 
+          "colname": "gray", 
+          "gval": "16031", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "3E9F3E9F3E9F", 
+          "bval": "16031"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "94", 
+          "gray": "24.6571", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "16159", 
+          "colname": "gray", 
+          "gval": "16159", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "3F1F3F1F3F1F", 
+          "bval": "16159"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "102", 
+          "gray": "24.8539", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "16288", 
+          "colname": "gray", 
+          "gval": "16288", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "3FA03FA03FA0", 
+          "bval": "16288"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "96", 
+          "gray": "25.0492", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "16416", 
+          "colname": "gray", 
+          "gval": "16416", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "402040204020", 
+          "bval": "16416"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "88", 
+          "gray": "25.2445", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "16544", 
+          "colname": "gray", 
+          "gval": "16544", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "40A040A040A0", 
+          "bval": "16544"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "90", 
+          "gray": "25.4398", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "16672", 
+          "colname": "gray", 
+          "gval": "16672", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "412041204120", 
+          "bval": "16672"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "86", 
+          "gray": "25.6367", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "16801", 
+          "colname": "gray", 
+          "gval": "16801", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "41A141A141A1", 
+          "bval": "16801"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "105", 
+          "gray": "25.832", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "16929", 
+          "colname": "gray", 
+          "gval": "16929", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "422142214221", 
+          "bval": "16929"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "84", 
+          "gray": "26.0273", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "17057", 
+          "colname": "gray", 
+          "gval": "17057", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "42A142A142A1", 
+          "bval": "17057"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "87", 
+          "gray": "26.2226", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "17185", 
+          "colname": "gray", 
+          "gval": "17185", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "432143214321", 
+          "bval": "17185"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "84", 
+          "gray": "26.4195", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "17314", 
+          "colname": "gray", 
+          "gval": "17314", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "43A243A243A2", 
+          "bval": "17314"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "108", 
+          "gray": "26.6148", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "17442", 
+          "colname": "gray", 
+          "gval": "17442", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "442244224422", 
+          "bval": "17442"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "83", 
+          "gray": "26.8101", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "17570", 
+          "colname": "gray", 
+          "gval": "17570", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "44A244A244A2", 
+          "bval": "17570"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "87", 
+          "gray": "27.0054", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "17698", 
+          "colname": "gray", 
+          "gval": "17698", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "452245224522", 
+          "bval": "17698"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "92", 
+          "gray": "27.2023", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "17827", 
+          "colname": "gray", 
+          "gval": "17827", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "45A345A345A3", 
+          "bval": "17827"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "70", 
+          "gray": "27.3976", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "17955", 
+          "colname": "gray", 
+          "gval": "17955", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "462346234623", 
+          "bval": "17955"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "86", 
+          "gray": "27.5929", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "18083", 
+          "colname": "gray", 
+          "gval": "18083", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "46A346A346A3", 
+          "bval": "18083"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "93", 
+          "gray": "27.7882", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "18211", 
+          "colname": "gray", 
+          "gval": "18211", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "472347234723", 
+          "bval": "18211"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "79", 
+          "gray": "27.985", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "18340", 
+          "colname": "gray", 
+          "gval": "18340", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "47A447A447A4", 
+          "bval": "18340"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "83", 
+          "gray": "28.1804", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "18468", 
+          "colname": "gray", 
+          "gval": "18468", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "482448244824", 
+          "bval": "18468"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "86", 
+          "gray": "28.3757", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "18596", 
+          "colname": "gray", 
+          "gval": "18596", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "48A448A448A4", 
+          "bval": "18596"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "82", 
+          "gray": "28.571", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "18724", 
+          "colname": "gray", 
+          "gval": "18724", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "492449244924", 
+          "bval": "18724"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "78", 
+          "gray": "28.7678", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "18853", 
+          "colname": "gray", 
+          "gval": "18853", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "49A549A549A5", 
+          "bval": "18853"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "77", 
+          "gray": "28.9631", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "18981", 
+          "colname": "gray", 
+          "gval": "18981", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "4A254A254A25", 
+          "bval": "18981"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "92", 
+          "gray": "29.1585", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "19109", 
+          "colname": "gray", 
+          "gval": "19109", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "4AA54AA54AA5", 
+          "bval": "19109"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "100", 
+          "gray": "29.3538", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "19237", 
+          "colname": "gray", 
+          "gval": "19237", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "4B254B254B25", 
+          "bval": "19237"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "74", 
+          "gray": "29.5506", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "19366", 
+          "colname": "gray", 
+          "gval": "19366", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "4BA64BA64BA6", 
+          "bval": "19366"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "80", 
+          "gray": "29.7459", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "19494", 
+          "colname": "gray", 
+          "gval": "19494", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "4C264C264C26", 
+          "bval": "19494"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "71", 
+          "gray": "29.9413", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "19622", 
+          "colname": "gray", 
+          "gval": "19622", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "4CA64CA64CA6", 
+          "bval": "19622"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "83", 
+          "gray": "30.1366", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "19750", 
+          "colname": "gray", 
+          "gval": "19750", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "4D264D264D26", 
+          "bval": "19750"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "65", 
+          "gray": "30.3334", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "19879", 
+          "colname": "gray", 
+          "gval": "19879", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "4DA74DA74DA7", 
+          "bval": "19879"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "75", 
+          "gray": "30.5287", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "20007", 
+          "colname": "gray", 
+          "gval": "20007", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "4E274E274E27", 
+          "bval": "20007"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "81", 
+          "gray": "30.724", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "20135", 
+          "colname": "gray", 
+          "gval": "20135", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "4EA74EA74EA7", 
+          "bval": "20135"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "76", 
+          "gray": "30.9194", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "20263", 
+          "colname": "gray", 
+          "gval": "20263", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "4F274F274F27", 
+          "bval": "20263"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "61", 
+          "gray": "31.1162", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "20392", 
+          "colname": "gray", 
+          "gval": "20392", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "4FA84FA84FA8", 
+          "bval": "20392"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "75", 
+          "gray": "31.3115", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "20520", 
+          "colname": "gray", 
+          "gval": "20520", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "502850285028", 
+          "bval": "20520"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "79", 
+          "gray": "31.5068", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "20648", 
+          "colname": "gray", 
+          "gval": "20648", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "50A850A850A8", 
+          "bval": "20648"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "70", 
+          "gray": "31.7021", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "20776", 
+          "colname": "gray", 
+          "gval": "20776", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "512851285128", 
+          "bval": "20776"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "76", 
+          "gray": "31.899", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "20905", 
+          "colname": "gray", 
+          "gval": "20905", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "51A951A951A9", 
+          "bval": "20905"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "64", 
+          "gray": "32.0943", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "21033", 
+          "colname": "gray", 
+          "gval": "21033", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "522952295229", 
+          "bval": "21033"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "74", 
+          "gray": "32.2896", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "21161", 
+          "colname": "gray", 
+          "gval": "21161", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "52A952A952A9", 
+          "bval": "21161"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "75", 
+          "gray": "32.4849", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "21289", 
+          "colname": "gray", 
+          "gval": "21289", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "532953295329", 
+          "bval": "21289"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "64", 
+          "gray": "32.6818", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "21418", 
+          "colname": "gray", 
+          "gval": "21418", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "53AA53AA53AA", 
+          "bval": "21418"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "50", 
+          "gray": "32.8771", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "21546", 
+          "colname": "gray", 
+          "gval": "21546", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "542A542A542A", 
+          "bval": "21546"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "59", 
+          "gray": "33.0724", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "21674", 
+          "colname": "gray", 
+          "gval": "21674", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "54AA54AA54AA", 
+          "bval": "21674"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "69", 
+          "gray": "33.2677", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "21802", 
+          "colname": "gray", 
+          "gval": "21802", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "552A552A552A", 
+          "bval": "21802"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "65", 
+          "gray": "33.463", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "21930", 
+          "colname": "gray", 
+          "gval": "21930", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "55AA55AA55AA", 
+          "bval": "21930"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "72", 
+          "gray": "33.6599", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "22059", 
+          "colname": "gray", 
+          "gval": "22059", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "562B562B562B", 
+          "bval": "22059"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "48", 
+          "gray": "33.8552", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "22187", 
+          "colname": "gray", 
+          "gval": "22187", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "56AB56AB56AB", 
+          "bval": "22187"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "74", 
+          "gray": "34.0505", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "22315", 
+          "colname": "gray", 
+          "gval": "22315", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "572B572B572B", 
+          "bval": "22315"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "56", 
+          "gray": "34.2458", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "22443", 
+          "colname": "gray", 
+          "gval": "22443", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "57AB57AB57AB", 
+          "bval": "22443"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "66", 
+          "gray": "34.4427", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "22572", 
+          "colname": "gray", 
+          "gval": "22572", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "582C582C582C", 
+          "bval": "22572"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "69", 
+          "gray": "34.638", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "22700", 
+          "colname": "gray", 
+          "gval": "22700", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "58AC58AC58AC", 
+          "bval": "22700"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "70", 
+          "gray": "34.8333", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "22828", 
+          "colname": "gray", 
+          "gval": "22828", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "592C592C592C", 
+          "bval": "22828"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "78", 
+          "gray": "35.0286", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "22956", 
+          "colname": "gray", 
+          "gval": "22956", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "59AC59AC59AC", 
+          "bval": "22956"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "61", 
+          "gray": "35.2255", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "23085", 
+          "colname": "gray", 
+          "gval": "23085", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "5A2D5A2D5A2D", 
+          "bval": "23085"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "53", 
+          "gray": "35.4208", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "23213", 
+          "colname": "gray", 
+          "gval": "23213", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "5AAD5AAD5AAD", 
+          "bval": "23213"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "60", 
+          "gray": "35.6161", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "23341", 
+          "colname": "gray", 
+          "gval": "23341", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "5B2D5B2D5B2D", 
+          "bval": "23341"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "62", 
+          "gray": "35.8114", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "23469", 
+          "colname": "gray", 
+          "gval": "23469", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "5BAD5BAD5BAD", 
+          "bval": "23469"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "55", 
+          "gray": "36.0082", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "23598", 
+          "colname": "gray", 
+          "gval": "23598", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "5C2E5C2E5C2E", 
+          "bval": "23598"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "66", 
+          "gray": "36.2036", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "23726", 
+          "colname": "gray", 
+          "gval": "23726", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "5CAE5CAE5CAE", 
+          "bval": "23726"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "68", 
+          "gray": "36.3989", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "23854", 
+          "colname": "gray", 
+          "gval": "23854", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "5D2E5D2E5D2E", 
+          "bval": "23854"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "66", 
+          "gray": "36.5942", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "23982", 
+          "colname": "gray", 
+          "gval": "23982", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "5DAE5DAE5DAE", 
+          "bval": "23982"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "56", 
+          "gray": "36.791", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "24111", 
+          "colname": "gray", 
+          "gval": "24111", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "5E2F5E2F5E2F", 
+          "bval": "24111"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "66", 
+          "gray": "36.9863", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "24239", 
+          "colname": "gray", 
+          "gval": "24239", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "5EAF5EAF5EAF", 
+          "bval": "24239"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "56", 
+          "gray": "37.1817", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "24367", 
+          "colname": "gray", 
+          "gval": "24367", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "5F2F5F2F5F2F", 
+          "bval": "24367"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "66", 
+          "gray": "37.377", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "24495", 
+          "colname": "gray", 
+          "gval": "24495", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "5FAF5FAF5FAF", 
+          "bval": "24495"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "60", 
+          "gray": "37.5738", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "24624", 
+          "colname": "gray", 
+          "gval": "24624", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "603060306030", 
+          "bval": "24624"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "76", 
+          "gray": "37.7691", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "24752", 
+          "colname": "gray", 
+          "gval": "24752", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "60B060B060B0", 
+          "bval": "24752"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "51", 
+          "gray": "37.9644", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "24880", 
+          "colname": "gray", 
+          "gval": "24880", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "613061306130", 
+          "bval": "24880"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "63", 
+          "gray": "38.1598", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "25008", 
+          "colname": "gray", 
+          "gval": "25008", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "61B061B061B0", 
+          "bval": "25008"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "73", 
+          "gray": "38.3566", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "25137", 
+          "colname": "gray", 
+          "gval": "25137", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "623162316231", 
+          "bval": "25137"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "61", 
+          "gray": "38.5519", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "25265", 
+          "colname": "gray", 
+          "gval": "25265", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "62B162B162B1", 
+          "bval": "25265"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "64", 
+          "gray": "38.7472", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "25393", 
+          "colname": "gray", 
+          "gval": "25393", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "633163316331", 
+          "bval": "25393"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "57", 
+          "gray": "38.9425", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "25521", 
+          "colname": "gray", 
+          "gval": "25521", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "63B163B163B1", 
+          "bval": "25521"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "67", 
+          "gray": "39.1394", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "25650", 
+          "colname": "gray", 
+          "gval": "25650", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "643264326432", 
+          "bval": "25650"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "62", 
+          "gray": "39.3347", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "25778", 
+          "colname": "gray", 
+          "gval": "25778", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "64B264B264B2", 
+          "bval": "25778"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "59", 
+          "gray": "39.53", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "25906", 
+          "colname": "gray", 
+          "gval": "25906", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "653265326532", 
+          "bval": "25906"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "53", 
+          "gray": "39.7253", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "26034", 
+          "colname": "gray", 
+          "gval": "26034", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "65B265B265B2", 
+          "bval": "26034"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "65", 
+          "gray": "39.9222", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "26163", 
+          "colname": "gray", 
+          "gval": "26163", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "663366336633", 
+          "bval": "26163"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "61", 
+          "gray": "40.1175", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "26291", 
+          "colname": "gray", 
+          "gval": "26291", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "66B366B366B3", 
+          "bval": "26291"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "67", 
+          "gray": "40.3128", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "26419", 
+          "colname": "gray", 
+          "gval": "26419", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "673367336733", 
+          "bval": "26419"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "69", 
+          "gray": "40.5081", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "26547", 
+          "colname": "gray", 
+          "gval": "26547", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "67B367B367B3", 
+          "bval": "26547"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "65", 
+          "gray": "40.705", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "26676", 
+          "colname": "gray", 
+          "gval": "26676", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "683468346834", 
+          "bval": "26676"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "64", 
+          "gray": "40.9003", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "26804", 
+          "colname": "gray", 
+          "gval": "26804", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "68B468B468B4", 
+          "bval": "26804"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "55", 
+          "gray": "41.0956", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "26932", 
+          "colname": "gray", 
+          "gval": "26932", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "693469346934", 
+          "bval": "26932"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "57", 
+          "gray": "41.2909", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "27060", 
+          "colname": "gray", 
+          "gval": "27060", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "69B469B469B4", 
+          "bval": "27060"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "65", 
+          "gray": "41.4878", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "27189", 
+          "colname": "gray", 
+          "gval": "27189", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "6A356A356A35", 
+          "bval": "27189"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "83", 
+          "gray": "41.6831", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "27317", 
+          "colname": "gray", 
+          "gval": "27317", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "6AB56AB56AB5", 
+          "bval": "27317"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "48", 
+          "gray": "41.8784", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "27445", 
+          "colname": "gray", 
+          "gval": "27445", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "6B356B356B35", 
+          "bval": "27445"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "54", 
+          "gray": "42.0737", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "27573", 
+          "colname": "gray", 
+          "gval": "27573", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "6BB56BB56BB5", 
+          "bval": "27573"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "51", 
+          "gray": "42.2705", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "27702", 
+          "colname": "gray", 
+          "gval": "27702", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "6C366C366C36", 
+          "bval": "27702"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "50", 
+          "gray": "42.4659", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "27830", 
+          "colname": "gray", 
+          "gval": "27830", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "6CB66CB66CB6", 
+          "bval": "27830"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "51", 
+          "gray": "42.6612", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "27958", 
+          "colname": "gray", 
+          "gval": "27958", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "6D366D366D36", 
+          "bval": "27958"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "47", 
+          "gray": "42.8565", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "28086", 
+          "colname": "gray", 
+          "gval": "28086", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "6DB66DB66DB6", 
+          "bval": "28086"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "56", 
+          "gray": "43.0533", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "28215", 
+          "colname": "gray", 
+          "gval": "28215", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "6E376E376E37", 
+          "bval": "28215"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "61", 
+          "gray": "43.2486", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "28343", 
+          "colname": "gray", 
+          "gval": "28343", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "6EB76EB76EB7", 
+          "bval": "28343"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "46", 
+          "gray": "43.444", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "28471", 
+          "colname": "gray", 
+          "gval": "28471", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "6F376F376F37", 
+          "bval": "28471"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "72", 
+          "gray": "43.6393", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "28599", 
+          "colname": "gray", 
+          "gval": "28599", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "6FB76FB76FB7", 
+          "bval": "28599"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "54", 
+          "gray": "43.8361", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "28728", 
+          "colname": "gray", 
+          "gval": "28728", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "703870387038", 
+          "bval": "28728"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "54", 
+          "gray": "44.0314", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "28856", 
+          "colname": "gray", 
+          "gval": "28856", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "70B870B870B8", 
+          "bval": "28856"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "55", 
+          "gray": "44.2267", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "28984", 
+          "colname": "gray", 
+          "gval": "28984", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "713871387138", 
+          "bval": "28984"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "56", 
+          "gray": "44.4221", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "29112", 
+          "colname": "gray", 
+          "gval": "29112", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "71B871B871B8", 
+          "bval": "29112"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "49", 
+          "gray": "44.6189", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "29241", 
+          "colname": "gray", 
+          "gval": "29241", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "723972397239", 
+          "bval": "29241"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "48", 
+          "gray": "44.8142", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "29369", 
+          "colname": "gray", 
+          "gval": "29369", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "72B972B972B9", 
+          "bval": "29369"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "53", 
+          "gray": "45.0095", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "29497", 
+          "colname": "gray", 
+          "gval": "29497", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "733973397339", 
+          "bval": "29497"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "56", 
+          "gray": "45.2049", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "29625", 
+          "colname": "gray", 
+          "gval": "29625", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "73B973B973B9", 
+          "bval": "29625"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "51", 
+          "gray": "45.4017", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "29754", 
+          "colname": "gray", 
+          "gval": "29754", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "743A743A743A", 
+          "bval": "29754"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "54", 
+          "gray": "45.597", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "29882", 
+          "colname": "gray", 
+          "gval": "29882", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "74BA74BA74BA", 
+          "bval": "29882"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "55", 
+          "gray": "45.7923", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "30010", 
+          "colname": "gray", 
+          "gval": "30010", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "753A753A753A", 
+          "bval": "30010"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "50", 
+          "gray": "45.9876", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "30138", 
+          "colname": "gray", 
+          "gval": "30138", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "75BA75BA75BA", 
+          "bval": "30138"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "57", 
+          "gray": "46.1845", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "30267", 
+          "colname": "gray", 
+          "gval": "30267", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "763B763B763B", 
+          "bval": "30267"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "73", 
+          "gray": "46.3798", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "30395", 
+          "colname": "gray", 
+          "gval": "30395", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "76BB76BB76BB", 
+          "bval": "30395"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "58", 
+          "gray": "46.5751", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "30523", 
+          "colname": "gray", 
+          "gval": "30523", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "773B773B773B", 
+          "bval": "30523"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "77", 
+          "gray": "46.7704", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "30651", 
+          "colname": "gray", 
+          "gval": "30651", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "77BB77BB77BB", 
+          "bval": "30651"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "69", 
+          "gray": "46.9673", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "30780", 
+          "colname": "gray", 
+          "gval": "30780", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "783C783C783C", 
+          "bval": "30780"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "63", 
+          "gray": "47.1626", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "30908", 
+          "colname": "gray", 
+          "gval": "30908", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "78BC78BC78BC", 
+          "bval": "30908"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "64", 
+          "gray": "47.3579", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "31036", 
+          "colname": "gray", 
+          "gval": "31036", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "793C793C793C", 
+          "bval": "31036"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "57", 
+          "gray": "47.5532", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "31164", 
+          "colname": "gray", 
+          "gval": "31164", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "79BC79BC79BC", 
+          "bval": "31164"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "66", 
+          "gray": "47.7501", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "31293", 
+          "colname": "gray", 
+          "gval": "31293", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "7A3D7A3D7A3D", 
+          "bval": "31293"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "69", 
+          "gray": "47.9454", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "31421", 
+          "colname": "gray", 
+          "gval": "31421", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "7ABD7ABD7ABD", 
+          "bval": "31421"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "55", 
+          "gray": "48.1407", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "31549", 
+          "colname": "gray", 
+          "gval": "31549", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "7B3D7B3D7B3D", 
+          "bval": "31549"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "65", 
+          "gray": "48.336", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "31677", 
+          "colname": "gray", 
+          "gval": "31677", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "7BBD7BBD7BBD", 
+          "bval": "31677"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "72", 
+          "gray": "48.5328", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "31806", 
+          "colname": "gray", 
+          "gval": "31806", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "7C3E7C3E7C3E", 
+          "bval": "31806"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "64", 
+          "gray": "48.7282", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "31934", 
+          "colname": "gray", 
+          "gval": "31934", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "7CBE7CBE7CBE", 
+          "bval": "31934"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "65", 
+          "gray": "48.9235", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "32062", 
+          "colname": "gray", 
+          "gval": "32062", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "7D3E7D3E7D3E", 
+          "bval": "32062"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "57", 
+          "gray": "49.1188", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "32190", 
+          "colname": "gray", 
+          "gval": "32190", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "7DBE7DBE7DBE", 
+          "bval": "32190"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "65", 
+          "gray": "49.3156", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "32319", 
+          "colname": "gray", 
+          "gval": "32319", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "7E3F7E3F7E3F", 
+          "bval": "32319"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "64", 
+          "gray": "49.5109", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "32447", 
+          "colname": "gray", 
+          "gval": "32447", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "7EBF7EBF7EBF", 
+          "bval": "32447"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "41", 
+          "gray": "49.7063", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "32575", 
+          "colname": "gray", 
+          "gval": "32575", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "7F3F7F3F7F3F", 
+          "bval": "32575"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "56", 
+          "gray": "49.9016", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "32703", 
+          "colname": "gray", 
+          "gval": "32703", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "7FBF7FBF7FBF", 
+          "bval": "32703"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "59", 
+          "gray": "50.0984", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "32832", 
+          "colname": "gray", 
+          "gval": "32832", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "804080408040", 
+          "bval": "32832"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "62", 
+          "gray": "50.2937", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "32960", 
+          "colname": "gray", 
+          "gval": "32960", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "80C080C080C0", 
+          "bval": "32960"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "66", 
+          "gray": "50.4891", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "33088", 
+          "colname": "gray", 
+          "gval": "33088", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "814081408140", 
+          "bval": "33088"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "65", 
+          "gray": "50.6844", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "33216", 
+          "colname": "gray", 
+          "gval": "33216", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "81C081C081C0", 
+          "bval": "33216"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "63", 
+          "gray": "50.8812", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "33345", 
+          "colname": "gray", 
+          "gval": "33345", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "824182418241", 
+          "bval": "33345"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "62", 
+          "gray": "51.0765", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "33473", 
+          "colname": "gray", 
+          "gval": "33473", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "82C182C182C1", 
+          "bval": "33473"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "73", 
+          "gray": "51.2718", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "33601", 
+          "colname": "gray", 
+          "gval": "33601", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "834183418341", 
+          "bval": "33601"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "67", 
+          "gray": "51.4672", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "33729", 
+          "colname": "gray", 
+          "gval": "33729", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "83C183C183C1", 
+          "bval": "33729"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "67", 
+          "gray": "51.664", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "33858", 
+          "colname": "gray", 
+          "gval": "33858", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "844284428442", 
+          "bval": "33858"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "65", 
+          "gray": "51.8593", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "33986", 
+          "colname": "gray", 
+          "gval": "33986", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "84C284C284C2", 
+          "bval": "33986"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "75", 
+          "gray": "52.0546", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "34114", 
+          "colname": "gray", 
+          "gval": "34114", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "854285428542", 
+          "bval": "34114"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "78", 
+          "gray": "52.2499", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "34242", 
+          "colname": "gray", 
+          "gval": "34242", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "85C285C285C2", 
+          "bval": "34242"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "70", 
+          "gray": "52.4468", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "34371", 
+          "colname": "gray", 
+          "gval": "34371", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "864386438643", 
+          "bval": "34371"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "90", 
+          "gray": "52.6421", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "34499", 
+          "colname": "gray", 
+          "gval": "34499", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "86C386C386C3", 
+          "bval": "34499"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "81", 
+          "gray": "52.8374", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "34627", 
+          "colname": "gray", 
+          "gval": "34627", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "874387438743", 
+          "bval": "34627"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "72", 
+          "gray": "53.0327", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "34755", 
+          "colname": "gray", 
+          "gval": "34755", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "87C387C387C3", 
+          "bval": "34755"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "74", 
+          "gray": "53.2296", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "34884", 
+          "colname": "gray", 
+          "gval": "34884", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "884488448844", 
+          "bval": "34884"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "74", 
+          "gray": "53.4249", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "35012", 
+          "colname": "gray", 
+          "gval": "35012", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "88C488C488C4", 
+          "bval": "35012"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "78", 
+          "gray": "53.6202", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "35140", 
+          "colname": "gray", 
+          "gval": "35140", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "894489448944", 
+          "bval": "35140"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "72", 
+          "gray": "53.8155", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "35268", 
+          "colname": "gray", 
+          "gval": "35268", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "89C489C489C4", 
+          "bval": "35268"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "67", 
+          "gray": "54.0124", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "35397", 
+          "colname": "gray", 
+          "gval": "35397", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "8A458A458A45", 
+          "bval": "35397"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "64", 
+          "gray": "54.2077", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "35525", 
+          "colname": "gray", 
+          "gval": "35525", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "8AC58AC58AC5", 
+          "bval": "35525"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "60", 
+          "gray": "54.403", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "35653", 
+          "colname": "gray", 
+          "gval": "35653", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "8B458B458B45", 
+          "bval": "35653"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "48", 
+          "gray": "54.5983", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "35781", 
+          "colname": "gray", 
+          "gval": "35781", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "8BC58BC58BC5", 
+          "bval": "35781"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "56", 
+          "gray": "54.7951", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "35910", 
+          "colname": "gray", 
+          "gval": "35910", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "8C468C468C46", 
+          "bval": "35910"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "50", 
+          "gray": "54.9905", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "36038", 
+          "colname": "gray", 
+          "gval": "36038", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "8CC68CC68CC6", 
+          "bval": "36038"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "35", 
+          "gray": "55.1858", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "36166", 
+          "colname": "gray", 
+          "gval": "36166", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "8D468D468D46", 
+          "bval": "36166"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "26", 
+          "gray": "55.3811", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "36294", 
+          "colname": "gray", 
+          "gval": "36294", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "8DC68DC68DC6", 
+          "bval": "36294"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "21", 
+          "gray": "55.5779", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "36423", 
+          "colname": "gray", 
+          "gval": "36423", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "8E478E478E47", 
+          "bval": "36423"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "22", 
+          "gray": "55.7733", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "36551", 
+          "colname": "gray", 
+          "gval": "36551", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "8EC78EC78EC7", 
+          "bval": "36551"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "17", 
+          "gray": "55.9686", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "36679", 
+          "colname": "gray", 
+          "gval": "36679", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "8F478F478F47", 
+          "bval": "36679"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "8", 
+          "gray": "56.1639", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "36807", 
+          "colname": "gray", 
+          "gval": "36807", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "8FC78FC78FC7", 
+          "bval": "36807"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "13", 
+          "gray": "56.3607", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "36936", 
+          "colname": "gray", 
+          "gval": "36936", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "904890489048", 
+          "bval": "36936"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "17", 
+          "gray": "56.556", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "37064", 
+          "colname": "gray", 
+          "gval": "37064", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "90C890C890C8", 
+          "bval": "37064"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "11", 
+          "gray": "56.7514", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "37192", 
+          "colname": "gray", 
+          "gval": "37192", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "914891489148", 
+          "bval": "37192"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "10", 
+          "gray": "56.9467", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "37320", 
+          "colname": "gray", 
+          "gval": "37320", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "91C891C891C8", 
+          "bval": "37320"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "9", 
+          "gray": "57.1435", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "37449", 
+          "colname": "gray", 
+          "gval": "37449", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "924992499249", 
+          "bval": "37449"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "6", 
+          "gray": "57.3388", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "37577", 
+          "colname": "gray", 
+          "gval": "37577", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "92C992C992C9", 
+          "bval": "37577"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "12", 
+          "gray": "57.5341", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "37705", 
+          "colname": "gray", 
+          "gval": "37705", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "934993499349", 
+          "bval": "37705"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "6", 
+          "gray": "57.7295", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "37833", 
+          "colname": "gray", 
+          "gval": "37833", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "93C993C993C9", 
+          "bval": "37833"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "5", 
+          "gray": "57.9263", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "37962", 
+          "colname": "gray", 
+          "gval": "37962", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "944A944A944A", 
+          "bval": "37962"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "8", 
+          "gray": "58.1216", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "38090", 
+          "colname": "gray", 
+          "gval": "38090", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "94CA94CA94CA", 
+          "bval": "38090"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "3", 
+          "gray": "58.3169", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "38218", 
+          "colname": "gray", 
+          "gval": "38218", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "954A954A954A", 
+          "bval": "38218"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "4", 
+          "gray": "58.5122", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "38346", 
+          "colname": "gray", 
+          "gval": "38346", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "95CA95CA95CA", 
+          "bval": "38346"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "5", 
+          "gray": "58.7091", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "38475", 
+          "colname": "gray", 
+          "gval": "38475", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "964B964B964B", 
+          "bval": "38475"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "9", 
+          "gray": "58.9044", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "38603", 
+          "colname": "gray", 
+          "gval": "38603", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "96CB96CB96CB", 
+          "bval": "38603"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "4", 
+          "gray": "59.0997", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "38731", 
+          "colname": "gray", 
+          "gval": "38731", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "974B974B974B", 
+          "bval": "38731"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "5", 
+          "gray": "59.295", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "38859", 
+          "colname": "gray", 
+          "gval": "38859", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "97CB97CB97CB", 
+          "bval": "38859"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "3", 
+          "gray": "59.4919", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "38988", 
+          "colname": "gray", 
+          "gval": "38988", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "984C984C984C", 
+          "bval": "38988"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "4", 
+          "gray": "59.6872", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "39116", 
+          "colname": "gray", 
+          "gval": "39116", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "98CC98CC98CC", 
+          "bval": "39116"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "2", 
+          "gray": "59.8825", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "39244", 
+          "colname": "gray", 
+          "gval": "39244", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "994C994C994C", 
+          "bval": "39244"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "3", 
+          "gray": "60.0778", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "39372", 
+          "colname": "gray", 
+          "gval": "39372", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "99CC99CC99CC", 
+          "bval": "39372"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "1", 
+          "gray": "60.2747", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "39501", 
+          "colname": "gray", 
+          "gval": "39501", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "9A4D9A4D9A4D", 
+          "bval": "39501"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "3", 
+          "gray": "60.47", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "39629", 
+          "colname": "gray", 
+          "gval": "39629", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "9ACD9ACD9ACD", 
+          "bval": "39629"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "7", 
+          "gray": "60.6653", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "39757", 
+          "colname": "gray", 
+          "gval": "39757", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "9B4D9B4D9B4D", 
+          "bval": "39757"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "6", 
+          "gray": "60.8606", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "39885", 
+          "colname": "gray", 
+          "gval": "39885", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "9BCD9BCD9BCD", 
+          "bval": "39885"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "3", 
+          "gray": "61.0575", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "40014", 
+          "colname": "gray", 
+          "gval": "40014", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "9C4E9C4E9C4E", 
+          "bval": "40014"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "3", 
+          "gray": "61.2528", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "40142", 
+          "colname": "gray", 
+          "gval": "40142", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "9CCE9CCE9CCE", 
+          "bval": "40142"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "4", 
+          "gray": "61.4481", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "40270", 
+          "colname": "gray", 
+          "gval": "40270", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "9D4E9D4E9D4E", 
+          "bval": "40270"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "9", 
+          "gray": "61.6434", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "40398", 
+          "colname": "gray", 
+          "gval": "40398", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "9DCE9DCE9DCE", 
+          "bval": "40398"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "6", 
+          "gray": "61.8402", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "40527", 
+          "colname": "gray", 
+          "gval": "40527", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "9E4F9E4F9E4F", 
+          "bval": "40527"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "4", 
+          "gray": "62.0356", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "40655", 
+          "colname": "gray", 
+          "gval": "40655", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "9ECF9ECF9ECF", 
+          "bval": "40655"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "5", 
+          "gray": "62.2309", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "40783", 
+          "colname": "gray", 
+          "gval": "40783", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "9F4F9F4F9F4F", 
+          "bval": "40783"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "3", 
+          "gray": "62.4262", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "40911", 
+          "colname": "gray", 
+          "gval": "40911", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "9FCF9FCF9FCF", 
+          "bval": "40911"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "2", 
+          "gray": "62.8183", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "41168", 
+          "colname": "gray", 
+          "gval": "41168", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "A0D0A0D0A0D0", 
+          "bval": "41168"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "2", 
+          "gray": "63.209", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "41424", 
+          "colname": "gray", 
+          "gval": "41424", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "A1D0A1D0A1D0", 
+          "bval": "41424"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "2", 
+          "gray": "63.4058", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "41553", 
+          "colname": "gray", 
+          "gval": "41553", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "A251A251A251", 
+          "bval": "41553"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "2", 
+          "gray": "63.6011", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "41681", 
+          "colname": "gray", 
+          "gval": "41681", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "A2D1A2D1A2D1", 
+          "bval": "41681"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "2", 
+          "gray": "63.7964", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "41809", 
+          "colname": "gray", 
+          "gval": "41809", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "A351A351A351", 
+          "bval": "41809"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "2", 
+          "gray": "63.9918", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "41937", 
+          "colname": "gray", 
+          "gval": "41937", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "A3D1A3D1A3D1", 
+          "bval": "41937"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "2", 
+          "gray": "64.1886", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "42066", 
+          "colname": "gray", 
+          "gval": "42066", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "A452A452A452", 
+          "bval": "42066"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "1", 
+          "gray": "64.3839", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "42194", 
+          "colname": "gray", 
+          "gval": "42194", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "A4D2A4D2A4D2", 
+          "bval": "42194"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "1", 
+          "gray": "64.9714", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "42579", 
+          "colname": "gray", 
+          "gval": "42579", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "A653A653A653", 
+          "bval": "42579"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "2", 
+          "gray": "65.1667", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "42707", 
+          "colname": "gray", 
+          "gval": "42707", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "A6D3A6D3A6D3", 
+          "bval": "42707"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "1", 
+          "gray": "65.362", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "42835", 
+          "colname": "gray", 
+          "gval": "42835", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "A753A753A753", 
+          "bval": "42835"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "1", 
+          "gray": "65.7542", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "43092", 
+          "colname": "gray", 
+          "gval": "43092", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "A854A854A854", 
+          "bval": "43092"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "1", 
+          "gray": "66.1448", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "43348", 
+          "colname": "gray", 
+          "gval": "43348", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "A954A954A954", 
+          "bval": "43348"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "1", 
+          "gray": "66.3401", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "43476", 
+          "colname": "gray", 
+          "gval": "43476", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "A9D4A9D4A9D4", 
+          "bval": "43476"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "2", 
+          "gray": "66.537", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "43605", 
+          "colname": "gray", 
+          "gval": "43605", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "AA55AA55AA55", 
+          "bval": "43605"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "2", 
+          "gray": "66.7323", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "43733", 
+          "colname": "gray", 
+          "gval": "43733", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "AAD5AAD5AAD5", 
+          "bval": "43733"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "1", 
+          "gray": "67.1229", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "43989", 
+          "colname": "gray", 
+          "gval": "43989", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "ABD5ABD5ABD5", 
+          "bval": "43989"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "1", 
+          "gray": "67.7104", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "44374", 
+          "colname": "gray", 
+          "gval": "44374", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "AD56AD56AD56", 
+          "bval": "44374"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "1", 
+          "gray": "67.9057", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "44502", 
+          "colname": "gray", 
+          "gval": "44502", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "ADD6ADD6ADD6", 
+          "bval": "44502"
+        }
+      }, 
+      {
+        "HistogramLevel": {
+          "count": "1", 
+          "gray": "68.4932", 
+          "gperc": null, 
+          "rperc": null, 
+          "rval": "44887", 
+          "colname": "gray", 
+          "gval": "44887", 
+          "_value": "", 
+          "bperc": null, 
+          "hexval": "AF57AF57AF57", 
+          "bval": "44887"
+        }
+      }
+    ], 
+    "Channel statistics": {
+      "Gray": {
+        "skewness": "4.29953", 
+        "min": "0 (0)", 
+        "max": "350 (0.684932)", 
+        "entropy": "0.527715", 
+        "standard deviation": "42.7433 (0.0836464)", 
+        "kurtosis": "18.819", 
+        "mean": "16.4014 (0.0320966)"
+      }, 
+      "Pixels": "262144"
+    }, 
+    "Class": "DirectClass", 
+    "Mime type": "image/jp2", 
+    "Page geometry": "512x512+0+0", 
+    "Geometry": "512x512+0+0", 
+    "Colorspace": "Gray", 
+    "Depth": "9-bit", 
+    "Base filename": "sample.dcm", 
+    "User time": "0.000u", 
+    "Rendering intent": "Undefined", 
+    "Gamma": "0.454545", 
+    "Orientation": "Undefined", 
+    "Endianess": "Undefined", 
+    "Properties": {
+      "date": {
+        "create": "2016-05-06T08:07:10+02:00", 
+        "modify": "2016-05-06T08:07:10+02:00"
+      }, 
+      "dcm": {
+        "MediaStorageSOPInstanceUID": "1.3.12.2.1107.5.2.5.11090.5.0.5823661031981777", 
+        "ImageOrientation(Patient)": "0\\1\\0\\0\\0\\-1", 
+        "ScheduledStudyLocationAETitle(s)": "MRTSMH", 
+        "ImageComments": "WRIST RIGHT", 
+        "ScheduledStudyStartTime": "091500.000000", 
+        "DeviceSerialNumber": "11090", 
+        "LossyImageCompressionRatio": "7.163579", 
+        "ImageTime": "090021.062000", 
+        "SeriesTime": "090019.359000", 
+        "TransferSyntaxUID": "1.2.840.10008.1.2.4.91", 
+        "SoftwareVersion(s)": "4VA15A", 
+        "PhotometricInterpretation": "MONOCHROME2", 
+        "FrameofReferenceUID": "1.3.12.2.1107.5.2.5.11090.20040305085925296.0.0.0", 
+        "SOPInstanceUID": "1.3.12.2.1107.5.2.5.11090.5.0.5823661031981777", 
+        "ReferencedImageSequence": "\u00fe\u00ff", 
+        "ProtocolName": "SCOUT 3-PLANE RT.", 
+        "SpecificCharacterSet": "ISO_IR 100", 
+        "Patient'sName": "WRIX", 
+        "PixelSpacing": "0.48828125\\0.48828125", 
+        "ImagePosition(Patient)": "-22.463768\\-240.36232\\125", 
+        "SeriesDate": "20040305", 
+        "ImageDate": "20040305", 
+        "MagneticFieldStrength": "0.94999999", 
+        "ImagedNucleus": "1H", 
+        "MRAcquisitionType": "2D", 
+        "StudyComments": "WRIST RIGHT", 
+        "InstitutionName": "cJf7JCqV84P^te1az", 
+        "StudyTime": "085922.859000", 
+        "ReferringPhysician'sName": "FLp8xklEDWOqavQWiJ9", 
+        "RequestedProcedureDescription": "MRI WRIST WO/CONTRAST - UNILATERAL", 
+        "WindowCenter&WidthExplanation": "Algo1", 
+        "SAR": "0.00080508151", 
+        "SOPClassUID": "1.2.840.10008.5.1.4.1.1.4", 
+        "StudyInstanceUID": "1.2.840.113745.101000.1008000.38046.4274.5925160", 
+        "ScanningSequence": "GR", 
+        "Manufacturer": "SIEMENS", 
+        "StudyDate": "20040305", 
+        "RepetitionTime": "15", 
+        "Patient'sAge": "000Y", 
+        "ReferencedStudySequence": "\u00fe\u00ff", 
+        "StationName": "unknown", 
+        "SliceLocation": "-22.463768", 
+        "FlipAngle": "40", 
+        "LossyImageCompression": "01", 
+        "Patient'sID": "7rAgWJ.", 
+        "SeriesDescription": "SCOUT 3-PLANE RT.", 
+        "Operator'sName": "RIORDAN, JAMES", 
+        "ReferencedStudyComponentSequence": "\u00fe\u00ff", 
+        "AcquisitionTime": "085939.762492", 
+        "SequenceName": "*fl2d1", 
+        "SourceApplicationEntityTitle": "OsiriX", 
+        "SpacingBetweenSlices": "10.4", 
+        "ImageType": "ORIGINAL\\PRIMARY\\M\\HEADER_CORRECTED", 
+        "SequenceVariant": "SP", 
+        "ReferencedPatientSequence": "\u00fe\u00ff", 
+        "StudyStatusID": "SCHEDULED", 
+        "ImplementationClassUID": "1.3.6.1.4.1.19291.2.1", 
+        "AcquisitionDate": "20040305", 
+        "TransmittingCoil": "CP_Extremity", 
+        "ImagingFrequency": "40.408502", 
+        "StudyDescription": "WRIST^RIGHT", 
+        "RequestingPhysician": "DIFIORI^JOHN^^^M.D.", 
+        "ScheduledStudyStartDate": "20040305", 
+        "MediaStorageSOPClassUID": "1.2.840.10008.5.1.4.1.1.4", 
+        "ImplementationVersionName": "OSIRIX001", 
+        "SeriesInstanceUID": "1.3.12.2.1107.5.2.5.11090.5.0.5823657848275436", 
+        "Modality": "MR", 
+        "Manufacturer'sModelName": "Harmony"
+      }, 
+      "signature": "3729e110c4de124d348324bc4d25ca4ef540812b1959fda6934d392e0c4b80d3"
+    }, 
+    "Colors": "340", 
+    "Version": "ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org", 
+    "Iterations": "0"
+  }
+}

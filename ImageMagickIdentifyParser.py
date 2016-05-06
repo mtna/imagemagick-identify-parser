@@ -7,8 +7,6 @@ import sys
 import lxml.etree as etree
 from xml.etree.ElementTree import ElementTree,SubElement,Element,dump,tostring
 
-
-
 """
 Check if deps are present (ImageMagick)
 """
@@ -385,20 +383,22 @@ class ImageMagickIdentifyParser:
 
 if __name__ == '__main__':
     import argparse
-    parser = argparse.ArgumentParser(description='DICOM image metadata convertor')
-    parser.add_argument("-i", dest="filename", required=True, help="input file")
-    parser.add_argument('--irods' , '-ir',dest='irods', action='store_true')
-    parser.add_argument('--json', '-j', dest='json', action='store_true')
-    parser.add_argument('--raw' , '-r', dest='raw', action='store_true')
-    parser.add_argument('--xml' , '-x', dest='xml', action='store_true')
+    parser = argparse.ArgumentParser(description='ImageMagick identify -verbose parser and convertor')
+    parser.add_argument("filename", help="The input file")
+    parser.add_argument('--type' , '-t',default='json', help='The type of output. Can be json|irods|raw|xml.')
     args = parser.parse_args()
+    
     o = ImageMagickIdentifyParser()
     o.parse(args.filename)
-    if args.irods:
-        print o.toIRODS()
-    if args.json:
+
+    if args.type == 'json':
         print o.toJSON()
-    if args.raw:
+    elif args.type == 'irods':
+        print o.toIRODS()
+    elif args.type == 'irods':
         print o.Data
-    if args.xml:
+    elif args.type == 'xml':
         print o.toXML()
+    else:
+        print "Invalid type specified:" + args.type
+	   

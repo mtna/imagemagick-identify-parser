@@ -16,8 +16,8 @@ OPT=""
 
 for f in $(find ./samples/sample.* -type f -regex '.*\.\(dcm\|jpg\|jpeg\|png\|gif\)'); do
     identify -verbose $f > "$f.txt"
-    python ImageMagickIdentifyParser.py -i $f -x > "$f.xml"
-    python ImageMagickIdentifyParser.py -i $f -j > "$f.json"
+    python ImageMagickIdentifyParser.py -t xml $f > "$f.xml"
+    python ImageMagickIdentifyParser.py -t json $f > "$f.json"
 done
 
 echo "Done."

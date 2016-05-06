@@ -11,4 +11,15 @@ Note that you will need ImageMagick to be installed on your system in order to u
 
 ## Usage
 
-[TODO]
+```
+usage: ImageMagickIdentifyParser.py [-h] [--type TYPE] filename
+
+ImageMagick identify -verbose parser and convertor
+
+positional arguments:
+  filename              The input file
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --type TYPE, -t TYPE  The type of output. Can be json|irods|raw|xml.
+```
