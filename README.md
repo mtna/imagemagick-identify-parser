@@ -7,7 +7,12 @@ The [ImageMagick](http://imagemagick.org) software suite [`identify`](http://ima
 
 This Python `ImageMagickIdentifyParser` utility class can be used to call or parse the `identify -verbose <image>` tool text output and converts it into various formats such as JSON or XML for further reuse by code or applications.
 
-Note that you will need ImageMagick to be installed on your system in order to use this utility. 
+Note that you will need ImageMagick to be installed on your system in order to use this utility.
+
+## Install
+
+    sudo apt-get install imagemagick
+    pip install --user -r requirements.txt
 
 ## Usage
 
