@@ -40,16 +40,24 @@ import sys
 import lxml.etree as etree
 from xml.etree.ElementTree import ElementTree,SubElement,Element,dump,tostring
 
+__doc__ = """ 
+This module provides a indentation-based parser that parses
+the metadata provided by ImageMagick's utility called 'identify'.
+
+The code can be used both as a module or as a command.
 """
-Check if deps are present (ImageMagick)
-"""
+
 def checkProgram(program):
+    """
+    Check if a program is available
+    """
     return distutils.spawn.find_executable(program)
 
-"""
-DICOM image metadata indentation-based parser class
-"""
+
 class ImageMagickIdentifyParser:
+    """
+    DICOM image metadata indentation-based parser class
+    """
 
     Data = None
     HISTOGRAM_ELEM="HistogramLevel"
@@ -68,6 +76,7 @@ class ImageMagickIdentifyParser:
     #
     # Note that the last list of numbers in the parenthesis can have either 3 or 1 value.
     RE_LINE_HISTO = r"^\s+(?P<count>\d+):\s*\(\s*(?P<rval>\d+)\s*,\s*(?P<gval>\d+)\s*,\s*(?P<bval>\d+)\s*\)\s*#(?P<hexval>[0-9A-F]{12})\s*(?P<colname>[a-zA-Z]+)\s*\((?:(?P<rperc>\d+(?:\.\d+)?)%?,(?P<gperc>\d+(?:\.\d+)?)%?,(?P<bperc>\d+(?:\.\d+)?)%?|(?P<gray>\d+(?:\.\d+)?)%?)\)"
+
     def __init__(self):
         if not checkProgram('identify'):
             raise Exception('[Error] ImageMagick is missing')
@@ -77,6 +86,10 @@ class ImageMagickIdentifyParser:
 
     # adapt the tag name to conform with the XML format
     def normalizeName(self, name):
+        """
+        This method takes a string as parameter, converts it to camel-case
+        and returns it
+        """
         name = re.sub(r'\s','_',name)
         # we allow alphanumeric characters, and the colon
         # (because we'll split using that separator in treeTransformGroup)
@@ -95,9 +108,15 @@ class ImageMagickIdentifyParser:
         return ccName
 
     def runCmd(self, cmd):
+        """
+        This method runs a command and returns its output
+        """
         return os.popen(cmd).read()
 
     def parseLineGeneric(self, line):
+        """
+        This method parses a generic line and returns it as a dict
+        """
         matchGeneric = re.match(self.RE_LINE_GENERIC, line, re.UNICODE)
         if not matchGeneric:
             return None
@@ -128,6 +147,9 @@ class ImageMagickIdentifyParser:
         return new_node
 
     def parseLineHisto(self, line, level):
+        """
+        This method parses a histogram line and returns it as a dict
+        """
         matchHisto = re.match(self.RE_LINE_HISTO, line, re.UNICODE)
         if not matchHisto:
             return None
@@ -141,10 +163,35 @@ class ImageMagickIdentifyParser:
         return newNode
 
     def parse(self, filePath):
+        """
+        This method parses the metadata of an image file
+        """
         self.parseRaw(filePath)
         self.treeTransformGroup()
 
     def parseRaw(self, filePath):
+        """
+        This method takes as parameter a file path to an image and creates, runs
+        the identify command, retrieves the output and parses it into an abstract
+        syntax tree.
+
+        The identify commands' output is formatted as an space-indented
+        tree, this method uses a stack for parsing. A node is built for
+        each new line parsed and the node is placed on a stack.
+        The node object is then assigned a parent(the previous node on
+        the stack).
+
+        After placing a new node on the stack, the stack will hold the entire
+        path from the root to that node.
+
+        Corner-case: identify also provides a color histogram with pixel counts
+                     and colors ( http://www.imagemagick.org/Usage/files/#histogram )
+
+                     The histogram lines have a varying indentation but don't
+                     comply with the rest of the output. In order to
+                     cover them, a custom regex was written that parses
+                     those lines.
+        """
         # get identify output
         output = self.runCmd('identify -verbose ' + filePath)
         output = output.decode('iso-8859-1').encode('utf-8')
@@ -205,25 +252,28 @@ class ImageMagickIdentifyParser:
         # store the tree in the class attribute for later use
         self.Data = root
 
-    ## Group multiple options with the same 
-    ## prefix before the colon into a new parent
-    ## having the common prefix as the name
-    ##
-    ## an example to illustrate this:
-    ## <x>
-    ##   <p:a></p:a>
-    ##   <p:b></p:b>
-    ## </x>
-    ##
-    ## =>
-    ##
-    ## <x>
-    ##   <p>
-    ##      <a></a>
-    ##      <b></b>
-    ##   </p>
-    ## </x>
     def treeTransformGroup(self):
+        """
+        This method acts on the internal data. It groups multiple nodes
+        with the same prefix (the prefix is the string before the colon)
+        into a new parent named after the common prefix.
+
+        Example:
+
+        <x>
+          <p:a></p:a>
+          <p:b></p:b>
+        </x>
+
+        =>
+
+        <x>
+          <p>
+             <a></a>
+             <b></b>
+          </p>
+        </x>
+        """
         root = self.Data
         stack = []
         stack.append(root)
@@ -279,21 +329,23 @@ class ImageMagickIdentifyParser:
             if 'children' in x:
                 stack += x['children']
 
-    # Note: this is only to be used for JSON serialization
     def treeTransformCompact(self, x):
-        # this is basically a rebuilding of the tree in a more compact form.
-        # here is a summary of what this method does:
-        #
-        # 1) we transform the tree as follows:
-        # we aim to replace the 'children' attribute with either
-        # an array or a dictionary, as follows:
-        #
-        # - all children have different names => we can store them in a dict
-        # - if at least two children have the same name => we need to store them in an array
-        #
-        # 2) if a node has no children, and it has no additional attributes, then it
-        # can be expressed as {k: v}
-        #
+        """
+        This method rebuilds the tree in a more compact form.
+        The method is specifically used in the preparation of the output
+        for JSON format since the raw tree is too verbose.
+
+        Summary of how this method works:
+        1) we transform the tree as follows:
+        we aim to replace the 'children' attribute with either
+        an array or a dictionary, as follows:
+        - all children have different names => we can store them in a dict
+        - if at least two children have the same name => we need to store them in an array
+
+        2) if a node has no children, and it has no additional attributes, then it
+        can be expressed as {k: v}
+
+        """
         # check if it has no children
         xHasNoChildren = ('children' not in x) or ('children' in x and len(x['children']) == 0)
         # check if it has only basic properties: name,value,parent,children
@@ -348,6 +400,12 @@ class ImageMagickIdentifyParser:
             return [3,xname,w]
 
     def serializeXML(self,root,xmlRoot):
+        """
+        Takes the internal root of the internal metadata tree
+        and a root of an XML document as parameters.
+
+        It populates the XML document with the metadata.
+        """
         name = root['name']
         value = root['value']
 
@@ -397,6 +455,9 @@ class ImageMagickIdentifyParser:
         return props[1:] # drop the first % character
 
     def toJSON(self):
+        """
+        Returns the metadata in the JSON format
+        """
         Data = self.Data.copy()
         # run transformation to compact tree
         Data = self.treeTransformCompact(Data)
@@ -404,6 +465,9 @@ class ImageMagickIdentifyParser:
         return json.dumps(Data[2], indent=2, sort_keys=True)
 
     def toXML(self):
+        """
+        Returns the metadata in the XML format
+        """
         Data = self.Data.copy()
         root = Data['children'][0]
         # serialize the root node and return it
@@ -435,4 +499,3 @@ if __name__ == '__main__':
         print o.toXML()
     else:
         print "Invalid type specified:" + args.type
-# 	   
