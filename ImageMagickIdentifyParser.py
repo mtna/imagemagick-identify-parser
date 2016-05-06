@@ -78,10 +78,12 @@ class ImageMagickIdentifyParser:
     # adapt the tag name to conform with the XML format
     def normalizeName(self, name):
         name = re.sub(r'\s','_',name)
-        name = re.sub(r'[^a-zA-Z0-9]','_',name)
-        # trim any underscores at the end
+        # we allow alphanumeric characters, and the colon
+        # (because we'll split using that separator in treeTransformGroup)
+        name = re.sub(r'[^a-zA-Z0-9:]','_',name)
+        # trim any trailing underscores
         name = re.sub(r'_+$','',name)
-        # and at the beginning
+        # trim any leading underscores
         name = re.sub(r'^_+','',name)
 
         def upperCallback(x):
@@ -130,13 +132,13 @@ class ImageMagickIdentifyParser:
         if not matchHisto:
             return None
         d = matchHisto.groupdict()
-        new_node = d
-        new_node['name'] = self.HISTOGRAM_ELEM
-        new_node['value'] = ''
-        new_node['children'] = []
-        new_node['level'] = level
-        new_node['parent'] = None
-        return new_node
+        newNode = d
+        newNode['name'] = self.HISTOGRAM_ELEM
+        newNode['value'] = ''
+        newNode['children'] = []
+        newNode['level'] = level
+        newNode['parent'] = None
+        return newNode
 
     def parse(self, filePath):
         self.parseRaw(filePath)
@@ -187,6 +189,11 @@ class ImageMagickIdentifyParser:
 
                 # set parent
                 newNode['parent'] = stack[lc-1]
+                # normalize name
+                newNode['name'] = self.normalizeName(newNode['name'])
+                # utf8 decode name and value
+                newNode['name']  = newNode['name'].decode('utf-8')
+                newNode['value'] = newNode['value'].decode('utf-8')
                 # add the node as a child of its immediate parent
                 (stack[lc-1])['children'].append(newNode)
                 # put the node on the stack, this will subsequently be used
@@ -343,14 +350,11 @@ class ImageMagickIdentifyParser:
     def serializeXML(self,root,xmlRoot):
         name = root['name']
         value = root['value']
-        name = self.normalizeName(name)
-        name = name.decode('utf-8')
-        value = value.decode('utf-8')
 
         # serialize the node
         if 'children' in root and len(root['children']) > 0:
             for c in root['children']:
-                cName = self.normalizeName(c['name'])
+                cName = c['name']
                 xmlChild = SubElement(xmlRoot,cName)
                 self.serializeXML(c,xmlChild)
         else:
@@ -369,12 +373,9 @@ class ImageMagickIdentifyParser:
 
     def serializeIRODS(self,root,props,parent):
         name = root['name']
-        name = self.normalizeName(name)
-        name = name.decode('utf-8')
         if parent:
         	name = parent+"."+name
         value = root['value']
-        value = value.decode('utf-8')
         ret = props
 		
         # serialize the property
@@ -400,7 +401,7 @@ class ImageMagickIdentifyParser:
         # run transformation to compact tree
         Data = self.treeTransformCompact(Data)
         # serialize to json
-        return json.dumps(Data[2], indent=2)
+        return json.dumps(Data[2], indent=2, sort_keys=True)
 
     def toXML(self):
         Data = self.Data.copy()
