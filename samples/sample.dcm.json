@@ -5145,11 +5145,11 @@
     "NumberPixels": "262K", 
     "Orientation": "Undefined", 
     "PageGeometry": "512x512+0+0", 
-    "PixelsPerSecond": "87.382GB", 
+    "PixelsPerSecond": "65.536GB", 
     "Properties": {
       "date": {
-        "create": "2016-05-06T09:35:16+02:00", 
-        "modify": "2016-05-06T09:35:16+02:00"
+        "create": "2016-05-07T18:06:03+02:00", 
+        "modify": "2016-05-07T18:06:03+02:00"
       }, 
       "dcm": {
         "AcquisitionDate": "20040305", 
