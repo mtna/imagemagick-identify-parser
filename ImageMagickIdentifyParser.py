@@ -33,6 +33,7 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 # 
 import distutils.spawn
+import os.path
 import json
 import os
 import re
@@ -166,12 +167,15 @@ class ImageMagickIdentifyParser:
         """
         This method parses the metadata of an image file
         """
+        if not os.path.isfile(filePath):
+            raise Exception('[Error] The path does not point to a file')
+
         self.parseRaw(filePath)
         self.treeTransformGroup()
 
     def parseRaw(self, filePath):
         """
-        This method takes as parameter a file path to an image and creates, runs
+        This method takes as parameter a file path to an image, it then runs
         the identify command, retrieves the output and parses it into an abstract
         syntax tree.
 
@@ -254,9 +258,9 @@ class ImageMagickIdentifyParser:
 
     def treeTransformGroup(self):
         """
-        This method acts on the internal data. It groups multiple nodes
-        with the same prefix (the prefix is the string before the colon)
-        into a new parent named after the common prefix.
+        This method modifies the internal data in-place. It reorganizes the tree by
+        grouping multiple nodes with the same prefix (the prefix is the string
+        before the colon) into a new parent named after that common prefix.
 
         Example:
 
@@ -345,6 +349,12 @@ class ImageMagickIdentifyParser:
         2) if a node has no children, and it has no additional attributes, then it
         can be expressed as {k: v}
 
+        The return value of this method is always a list of 3 objects:
+        - the type of node processed
+        - the name of that node
+        - the new node object
+
+        The important part of the return value is the node object.
         """
         # check if it has no children
         xHasNoChildren = ('children' not in x) or ('children' in x and len(x['children']) == 0)
@@ -382,6 +392,10 @@ class ImageMagickIdentifyParser:
                 zi = self.treeTransformCompact(yi)
                 c.append(zi)
                 i += 1
+
+            # after this point, the entire subtree rooted in x has been
+            # rebuilt (except for x). the remainder of this method is
+            # concerned with x and the way its children are represented.
 
             # constructing the new node
             w = None
