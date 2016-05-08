@@ -363,9 +363,10 @@ class ImageMagickIdentifyParser:
                         i += 1
                 # at this point, depending on whether there were children to be grouped
                 # they were(into a), and those that couldn't be will have stayed the same(in x['children']).
-                # at this point, some nodes (some children of x) have been displaced and are now 
-                # children of new parent nodes, we are now expressing the fact that x has, among other children,
-                # these new parent children that were created
+                # some nodes (some children of x) have been displaced so they could be
+                # attached to the newly created parent nodes.
+                #
+                # add newly created parent nodes to the tree
                 x['children'] += a.values()
 
             # Get x's children and put them on the stack
@@ -418,8 +419,9 @@ class ImageMagickIdentifyParser:
                 xname = x['name']
                 xvalue = x['value']
                 del x['name']
-                del x['value']
-                x['_value'] = xvalue
+                # dispose of value attribute if it's empty
+                if 'value' in x and x['value'] == '':
+                    del x['value']
                 return [2,xname,x]
         else:
             c = []
@@ -491,6 +493,23 @@ class ImageMagickIdentifyParser:
 
             else:
                 xmlRoot.text=value
+
+    def stripParent(self):
+        """
+        Returns the tree with parentless nodes.
+        Note: Used for debugging purposes.
+        """
+        root = self.Data.copy()
+        stack = []
+        stack.append(root)
+
+        while len(stack) > 0:
+            x = stack.pop()
+            del x['parent']
+            if 'children' in x:
+                stack += x['children']
+
+        return root
 
     def serializeIRODS(self,root,props,parent):
         name = root['name']
