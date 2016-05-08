@@ -9,6 +9,7 @@ class TestsPDF(unittest.TestCase):
     def setUp(self):
         if self.obj is None:
             self.obj = ImageMagickIdentifyParser()
+            self.obj.optHistogram = True
             self.obj.parse('./samples/sample.pdf')
 
     @classmethod
@@ -26,6 +27,7 @@ class TestsPDF(unittest.TestCase):
         root = d.copy()
         stack = []
         stack.append(root)
+
         while len(stack) > 0:
             x = stack.pop()
             if x['name'] == self.obj.HISTOGRAM_ELEM and len(x['children']) > 0:

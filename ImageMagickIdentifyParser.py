@@ -62,6 +62,7 @@ class ImageMagickIdentifyParser:
     DICOM image metadata indentation-based parser class
     """
 
+    optHistogram = False
     Data = None
     HISTOGRAM_ELEM="HistogramLevel"
     # RE_GROUPED_ENTRY examples:
@@ -269,6 +270,10 @@ class ImageMagickIdentifyParser:
                     hm = True
                     # and we store the level for all the upcoming histogram lines that follow
                     lh = 1 + newNode['level']
+
+            # skip all histogram lines if histogram parsing is off
+            if hm and self.optHistogram == False:
+                continue
 
             if newNode:
                 lc = newNode['level']
@@ -566,9 +571,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='ImageMagick identify -verbose parser and convertor')
     parser.add_argument("filename", help="The input file")
     parser.add_argument('--type' , '-t',default='json', help='The output type. Can be json|irods|raw|xml.')
+    parser.add_argument('--histo', '-H',default='off' , help='Flag for histogram section parsing. Can be off|on (off by default)')
     args = parser.parse_args()
     
     o = ImageMagickIdentifyParser()
+    o.optHistogram = (args.histo == 'on')
     o.parse(args.filename)
 
     if args.type == 'json':

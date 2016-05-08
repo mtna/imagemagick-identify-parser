@@ -27,6 +27,7 @@ positional arguments:
   filename              The input file
 
 optional arguments:
-  -h, --help            show this help message and exit
-  --type TYPE, -t TYPE  The type of output. Can be json|irods|raw|xml.
+  -h, --help                Show this help message and exit
+  --type TYPE, -t TYPE      The type of output. Can be json|irods|raw|xml.
+  --histo HISTO, -H HISTO   Flag for histogram section parsing. Can be off|on (off by default)
 ```
