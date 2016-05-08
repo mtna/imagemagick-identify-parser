@@ -36,10 +36,12 @@ import distutils.spawn
 import os.path
 import json
 import os
+from subprocess import PIPE, Popen
 import re
 import sys
 import lxml.etree as etree
 from xml.etree.ElementTree import ElementTree,SubElement,Element,dump,tostring
+
 
 __doc__ = """ 
 This module provides a indentation-based parser that parses
@@ -74,9 +76,22 @@ class ImageMagickIdentifyParser:
     # 6709: (    0,    0,    0) #000000000000 gray(0)
     # 16680: (  128,  128,  128) #008000800080 gray(0.195315%)
     # 25206: (  256,  256,  256) #010001000100 gray(0.390631%)
+    # 12: ( 8224,17219,23644,30583) #202043435C5C7777 srgba(32,67,92,0.466667)
+    # 5672: (    0,    0,    0,65535) #000000000000 black
     #
     # Note that the last list of numbers in the parenthesis can have either 3 or 1 value.
-    RE_LINE_HISTO = r"^\s+(?P<count>\d+):\s*\(\s*(?P<rval>\d+)\s*,\s*(?P<gval>\d+)\s*,\s*(?P<bval>\d+)\s*\)\s*#(?P<hexval>[0-9A-F]{12})\s*(?P<colname>[a-zA-Z]+)\s*\((?:(?P<rperc>\d+(?:\.\d+)?)%?,(?P<gperc>\d+(?:\.\d+)?)%?,(?P<bperc>\d+(?:\.\d+)?)%?|(?P<gray>\d+(?:\.\d+)?)%?)\)"
+    RE_LINE_HISTO = \
+            r'\s*(?P<count>\d+):\s*'\
+            r'\s*\('\
+            r'(?P<colors>(?:\s*\d+,?)+)+'\
+            r'\s*\)\s*'\
+            r'#(?P<hexval>[0-9A-F]{8,})\s*'\
+            r'(?P<colname>[a-zA-Z]+)\s*'\
+            r'(?:'\
+            r'\s*\('\
+            r'(?P<percentages>(?:\s*\d+(?:\.\d+)?%?,?)+)'\
+            r'\s*\)'\
+            r')?'
 
     def __init__(self):
         if not checkProgram('identify'):
@@ -110,9 +125,16 @@ class ImageMagickIdentifyParser:
 
     def runCmd(self, cmd):
         """
-        This method runs a command and returns its output
+        This method runs a command and returns a list
+        with the contents of its stdout and stderr and
+        the exit code of the command.
         """
-        return os.popen(cmd).read()
+        p = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE, stderr=PIPE, close_fds=True)
+        (handleChildStdin,handleChildStdout,handleChildStderr) = (p.stdin, p.stdout, p.stderr)
+        childStdout = handleChildStdout.read()
+        childStderr = handleChildStderr.read()
+        p.wait()
+        return [childStdout, childStderr, p.returncode]
 
     def parseLineGeneric(self, line):
         """
@@ -155,6 +177,21 @@ class ImageMagickIdentifyParser:
         if not matchHisto:
             return None
         d = matchHisto.groupdict()
+
+        # unroll colors named capture
+        if 'colors' in d:
+            colors = map(lambda x: int(x), d['colors'].split(','))
+            d['colors'] = colors
+
+        # unroll percentages named capture
+        if 'percentages' in d:
+            pStr = d['percentages']
+            if pStr:
+                pStr = re.sub(r'%','',pStr)
+                p = pStr.split(',')
+                percentages = map(lambda x: float(x), p)
+                d['percentages'] = percentages
+
         newNode = d
         newNode['name'] = self.HISTOGRAM_ELEM
         newNode['value'] = ''
@@ -197,7 +234,10 @@ class ImageMagickIdentifyParser:
                      those lines.
         """
         # get identify output
-        output = self.runCmd('identify -verbose ' + filePath)
+        output, error, exitcode = self.runCmd('identify -verbose ' + filePath)
+        if exitcode != 0:
+            raise Exception('[Error] Identify returned with non-zero exit code')
+
         output = output.decode('iso-8859-1').encode('utf-8')
         lines = output.split('\n')
 
@@ -438,8 +478,17 @@ class ImageMagickIdentifyParser:
                     # in the RE_LINE_HISTO regex, and the xml module will throw exceptions on
                     # the undefined values, so we want to avoid that)
                     # and check that the key is not an internal data key
-                    if v and k not in ['name','value','parent','children']:
+                    if v and k not in ['name','value','parent','children','colors','percentages']:
                         xmlRoot.set(k,v)
+
+                if 'colors' in root and root['colors']:
+                    strColors = ",".join(map(str,root['colors']))
+                    xmlRoot.set('colors',strColors)
+
+                if 'percentages' in root and root['percentages']:
+                    strPercentages = ",".join(map(str, root['percentages']))
+                    xmlRoot.set('percentages',strPercentages)
+
             else:
                 xmlRoot.text=value
 
@@ -483,9 +532,9 @@ class ImageMagickIdentifyParser:
         Returns the metadata in the XML format
         """
         Data = self.Data.copy()
-        root = Data['children'][0]
+        root = Data
         # serialize the root node and return it
-        tree = ElementTree(Element('Image'))
+        tree = ElementTree(Element('Images'))
         tree.getroot().set('file',Data['children'][0]['value'])
         self.serializeXML(root, tree.getroot())
         # prettify XML and return it
