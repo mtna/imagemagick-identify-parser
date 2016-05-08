@@ -86,7 +86,7 @@ class ImageMagickIdentifyParser:
             r'(?P<colors>(?:\s*\d+,?)+)+'\
             r'\s*\)\s*'\
             r'#(?P<hexval>[0-9A-F]{8,})\s*'\
-            r'(?P<colname>[a-zA-Z]+)\s*'\
+            r'(?P<colorSpace>[a-zA-Z]+)\s*'\
             r'(?:'\
             r'\s*\('\
             r'(?P<percentages>(?:\s*\d+(?:\.\d+)?%?,?)+)'\
