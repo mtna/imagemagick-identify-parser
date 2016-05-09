@@ -33,12 +33,15 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 # 
 import distutils.spawn
+import os.path
 import json
 import os
+from subprocess import PIPE, Popen
 import re
 import sys
 import lxml.etree as etree
 from xml.etree.ElementTree import ElementTree,SubElement,Element,dump,tostring
+
 
 __doc__ = """ 
 This module provides a indentation-based parser that parses
@@ -59,6 +62,7 @@ class ImageMagickIdentifyParser:
     DICOM image metadata indentation-based parser class
     """
 
+    optHistogram = False
     Data = None
     HISTOGRAM_ELEM="HistogramLevel"
     # RE_GROUPED_ENTRY examples:
@@ -73,9 +77,22 @@ class ImageMagickIdentifyParser:
     # 6709: (    0,    0,    0) #000000000000 gray(0)
     # 16680: (  128,  128,  128) #008000800080 gray(0.195315%)
     # 25206: (  256,  256,  256) #010001000100 gray(0.390631%)
+    # 12: ( 8224,17219,23644,30583) #202043435C5C7777 srgba(32,67,92,0.466667)
+    # 5672: (    0,    0,    0,65535) #000000000000 black
     #
     # Note that the last list of numbers in the parenthesis can have either 3 or 1 value.
-    RE_LINE_HISTO = r"^\s+(?P<count>\d+):\s*\(\s*(?P<rval>\d+)\s*,\s*(?P<gval>\d+)\s*,\s*(?P<bval>\d+)\s*\)\s*#(?P<hexval>[0-9A-F]{12})\s*(?P<colname>[a-zA-Z]+)\s*\((?:(?P<rperc>\d+(?:\.\d+)?)%?,(?P<gperc>\d+(?:\.\d+)?)%?,(?P<bperc>\d+(?:\.\d+)?)%?|(?P<gray>\d+(?:\.\d+)?)%?)\)"
+    RE_LINE_HISTO = \
+            r'\s*(?P<count>\d+):\s*'\
+            r'\s*\('\
+            r'(?P<colors>(?:\s*\d+,?)+)+'\
+            r'\s*\)\s*'\
+            r'#(?P<hexval>[0-9A-F]{8,})\s*'\
+            r'(?P<colorSpace>[a-zA-Z]+)\s*'\
+            r'(?:'\
+            r'\s*\('\
+            r'(?P<percentages>(?:\s*\d+(?:\.\d+)?%?,?)+)'\
+            r'\s*\)'\
+            r')?'
 
     def __init__(self):
         if not checkProgram('identify'):
@@ -109,9 +126,16 @@ class ImageMagickIdentifyParser:
 
     def runCmd(self, cmd):
         """
-        This method runs a command and returns its output
+        This method runs a command and returns a list
+        with the contents of its stdout and stderr and
+        the exit code of the command.
         """
-        return os.popen(cmd).read()
+        p = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE, stderr=PIPE, close_fds=True)
+        (handleChildStdin,handleChildStdout,handleChildStderr) = (p.stdin, p.stdout, p.stderr)
+        childStdout = handleChildStdout.read()
+        childStderr = handleChildStderr.read()
+        p.wait()
+        return [childStdout, childStderr, p.returncode]
 
     def parseLineGeneric(self, line):
         """
@@ -154,6 +178,21 @@ class ImageMagickIdentifyParser:
         if not matchHisto:
             return None
         d = matchHisto.groupdict()
+
+        # unroll colors named capture
+        if 'colors' in d:
+            colors = map(lambda x: int(x), d['colors'].split(','))
+            d['colors'] = colors
+
+        # unroll percentages named capture
+        if 'percentages' in d:
+            pStr = d['percentages']
+            if pStr:
+                pStr = re.sub(r'%','',pStr)
+                p = pStr.split(',')
+                percentages = map(lambda x: float(x), p)
+                d['percentages'] = percentages
+
         newNode = d
         newNode['name'] = self.HISTOGRAM_ELEM
         newNode['value'] = ''
@@ -166,12 +205,15 @@ class ImageMagickIdentifyParser:
         """
         This method parses the metadata of an image file
         """
+        if not os.path.isfile(filePath):
+            raise Exception('[Error] The path does not point to a file')
+
         self.parseRaw(filePath)
         self.treeTransformGroup()
 
     def parseRaw(self, filePath):
         """
-        This method takes as parameter a file path to an image and creates, runs
+        This method takes as parameter a file path to an image, it then runs
         the identify command, retrieves the output and parses it into an abstract
         syntax tree.
 
@@ -193,7 +235,10 @@ class ImageMagickIdentifyParser:
                      those lines.
         """
         # get identify output
-        output = self.runCmd('identify -verbose ' + filePath)
+        output, error, exitcode = self.runCmd('identify -verbose ' + filePath)
+        if exitcode != 0:
+            raise Exception('[Error] Identify returned with non-zero exit code')
+
         output = output.decode('iso-8859-1').encode('utf-8')
         lines = output.split('\n')
 
@@ -226,6 +271,10 @@ class ImageMagickIdentifyParser:
                     # and we store the level for all the upcoming histogram lines that follow
                     lh = 1 + newNode['level']
 
+            # skip all histogram lines if histogram parsing is off
+            if hm and self.optHistogram == False:
+                continue
+
             if newNode:
                 lc = newNode['level']
 
@@ -254,9 +303,9 @@ class ImageMagickIdentifyParser:
 
     def treeTransformGroup(self):
         """
-        This method acts on the internal data. It groups multiple nodes
-        with the same prefix (the prefix is the string before the colon)
-        into a new parent named after the common prefix.
+        This method modifies the internal data in-place. It reorganizes the tree by
+        grouping multiple nodes with the same prefix (the prefix is the string
+        before the colon) into a new parent named after that common prefix.
 
         Example:
 
@@ -319,9 +368,10 @@ class ImageMagickIdentifyParser:
                         i += 1
                 # at this point, depending on whether there were children to be grouped
                 # they were(into a), and those that couldn't be will have stayed the same(in x['children']).
-                # at this point, some nodes (some children of x) have been displaced and are now 
-                # children of new parent nodes, we are now expressing the fact that x has, among other children,
-                # these new parent children that were created
+                # some nodes (some children of x) have been displaced so they could be
+                # attached to the newly created parent nodes.
+                #
+                # add newly created parent nodes to the tree
                 x['children'] += a.values()
 
             # Get x's children and put them on the stack
@@ -345,6 +395,12 @@ class ImageMagickIdentifyParser:
         2) if a node has no children, and it has no additional attributes, then it
         can be expressed as {k: v}
 
+        The return value of this method is always a list of 3 objects:
+        - the type of node processed
+        - the name of that node
+        - the new node object
+
+        The important part of the return value is the node object.
         """
         # check if it has no children
         xHasNoChildren = ('children' not in x) or ('children' in x and len(x['children']) == 0)
@@ -368,8 +424,9 @@ class ImageMagickIdentifyParser:
                 xname = x['name']
                 xvalue = x['value']
                 del x['name']
-                del x['value']
-                x['_value'] = xvalue
+                # dispose of value attribute if it's empty
+                if 'value' in x and x['value'] == '':
+                    del x['value']
                 return [2,xname,x]
         else:
             c = []
@@ -382,6 +439,10 @@ class ImageMagickIdentifyParser:
                 zi = self.treeTransformCompact(yi)
                 c.append(zi)
                 i += 1
+
+            # after this point, the entire subtree rooted in x has been
+            # rebuilt (except for x). the remainder of this method is
+            # concerned with x and the way its children are represented.
 
             # constructing the new node
             w = None
@@ -424,10 +485,36 @@ class ImageMagickIdentifyParser:
                     # in the RE_LINE_HISTO regex, and the xml module will throw exceptions on
                     # the undefined values, so we want to avoid that)
                     # and check that the key is not an internal data key
-                    if v and k not in ['name','value','parent','children']:
+                    if v and k not in ['name','value','parent','children','colors','percentages']:
                         xmlRoot.set(k,v)
+
+                if 'colors' in root and root['colors']:
+                    strColors = ",".join(map(str,root['colors']))
+                    xmlRoot.set('colors',strColors)
+
+                if 'percentages' in root and root['percentages']:
+                    strPercentages = ",".join(map(str, root['percentages']))
+                    xmlRoot.set('percentages',strPercentages)
+
             else:
                 xmlRoot.text=value
+
+    def stripParent(self):
+        """
+        Returns the tree with parentless nodes.
+        Note: Used for debugging purposes.
+        """
+        root = self.Data.copy()
+        stack = []
+        stack.append(root)
+
+        while len(stack) > 0:
+            x = stack.pop()
+            del x['parent']
+            if 'children' in x:
+                stack += x['children']
+
+        return root
 
     def serializeIRODS(self,root,props,parent):
         name = root['name']
@@ -469,9 +556,9 @@ class ImageMagickIdentifyParser:
         Returns the metadata in the XML format
         """
         Data = self.Data.copy()
-        root = Data['children'][0]
+        root = Data
         # serialize the root node and return it
-        tree = ElementTree(Element('Image'))
+        tree = ElementTree(Element('Images'))
         tree.getroot().set('file',Data['children'][0]['value'])
         self.serializeXML(root, tree.getroot())
         # prettify XML and return it
@@ -484,9 +571,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='ImageMagick identify -verbose parser and convertor')
     parser.add_argument("filename", help="The input file")
     parser.add_argument('--type' , '-t',default='json', help='The output type. Can be json|irods|raw|xml.')
+    parser.add_argument('--histo', '-H',default='off' , help='Flag for histogram section parsing. Can be off|on (off by default)')
     args = parser.parse_args()
     
     o = ImageMagickIdentifyParser()
+    o.optHistogram = (args.histo == 'on')
     o.parse(args.filename)
 
     if args.type == 'json':
