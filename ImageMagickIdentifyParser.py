@@ -137,6 +137,16 @@ class ImageMagickIdentifyParser:
         p.wait()
         return [childStdout, childStderr, p.returncode]
 
+    def getIMVersion(self):
+        stdout, stderr, exitcode = self.runCmd('identify -version')
+        match = re.match(r'^.*ImageMagick (?P<version>\d+(?:\.\d+)+(?:-\d+)?)', stdout)
+
+        if match and match.groupdict():
+            d = match.groupdict()
+            return d['version']
+
+        return None
+
     def parseLineGeneric(self, line):
         """
         This method parses a generic line and returns it as a dict
@@ -568,13 +578,15 @@ class ImageMagickIdentifyParser:
 
 if __name__ == '__main__':
     import argparse
+    o = ImageMagickIdentifyParser()
+
     parser = argparse.ArgumentParser(description='ImageMagick identify -verbose parser and convertor')
     parser.add_argument("filename", help="The input file")
     parser.add_argument('--type' , '-t',default='json', help='The output type. Can be json|irods|raw|xml.')
     parser.add_argument('--histo', '-H',default='off' , help='Flag for histogram section parsing. Can be off|on (off by default)')
     args = parser.parse_args()
     
-    o = ImageMagickIdentifyParser()
+
     o.optHistogram = (args.histo == 'on')
     o.parse(args.filename)
 

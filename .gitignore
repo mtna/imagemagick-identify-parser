@@ -1,0 +1,6 @@
+custom-build
+custom-build/
+custom-build/*
+imagemagick
+imagemagick/
+imagemagick/*
