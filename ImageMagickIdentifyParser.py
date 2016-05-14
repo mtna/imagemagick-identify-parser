@@ -84,7 +84,7 @@ class ImageMagickIdentifyParser:
     RE_LINE_HISTO = \
             r'\s*(?P<count>\d+):\s*'\
             r'\s*\('\
-            r'(?P<colors>(?:\s*\d+,?)+)+'\
+            r'(?P<colors>\s*\d+(?:,\s*\d+)+)+'\
             r'\s*\)\s*'\
             r'#(?P<hexval>[0-9A-F]{8,})\s*'\
             r'(?P<colorSpace>[a-zA-Z]+)\s*'\
