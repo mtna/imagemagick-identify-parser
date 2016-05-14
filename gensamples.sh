@@ -12,12 +12,13 @@ command -v identify >/dev/null 2>&1 || {
 
 echo "Generating samples...."
 #OPT="2>/dev/null >/dev/null"
-OPT=""
+#OPT=""
 
-for f in $(find ./samples -type f \( -iname \*.dcm -o -iname \*.jpg -o -iname \*.png -o -iname \*.pdf \)); do
-    identify -verbose $f > "$f.txt"
-    python ImageMagickIdentifyParser.py -t xml $f > "$f.xml"
-    python ImageMagickIdentifyParser.py -t json $f > "$f.json"
-done
+while IFS= read -r -d '' f
+do
+    identify -verbose "$f" > "$f.txt"
+    python ImageMagickIdentifyParser.py -t xml "$f" > "$f.xml"
+    python ImageMagickIdentifyParser.py -t json "$f" > "$f.json"
+done < <(find ./samples -type f \( -iname \*.dcm -o -iname \*.jpg -o -iname \*.png -o -iname \*.pdf \) -print0)
 
 echo "Done."

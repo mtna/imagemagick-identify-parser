@@ -87,10 +87,10 @@ for BRANCH in "${GIT_BRANCHES[@]}"; do
     git checkout $BRANCH
     # building a minimal imagemagick for testing purposes
     autoreconf -i
-    ./configure --without-perl --without-magick-plus-plus --disable-docs --prefix=$PWD/$IM_VER
+    ./configure --without-perl --without-magick-plus-plus --disable-docs --prefix="$PWD/$IM_VER"
     # speed up the build with 4 parallel jobs
     make -j4
-    mkdir -p $IM_VER
+    mkdir -p "$IM_VER"
     make install
     popd
 done
