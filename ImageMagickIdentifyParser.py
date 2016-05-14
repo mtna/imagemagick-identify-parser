@@ -80,17 +80,19 @@ class ImageMagickIdentifyParser:
     # 12: ( 8224,17219,23644,30583) #202043435C5C7777 srgba(32,67,92,0.466667)
     # 5672: (    0,    0,    0,65535) #000000000000 black
     #
-    # Note that the last list of numbers in the parenthesis can have either 3 or 1 value.
+    # Note that the last list of numbers in the parenthesis can have either 1,3 or 4 elements.
+    # The regex part for colors and percentages is essentially the same, the only difference is that
+    # percentages can also contain floating point and percentage signs.
     RE_LINE_HISTO = \
             r'\s*(?P<count>\d+):\s*'\
             r'\s*\('\
-            r'(?P<colors>\s*\d+(?:,\s*\d+)+)+'\
+            r'(?P<colors>\s*\d+(?:,\s*\d+)*)+'\
             r'\s*\)\s*'\
             r'#(?P<hexval>[0-9A-F]{8,})\s*'\
             r'(?P<colorSpace>[a-zA-Z]+)\s*'\
             r'(?:'\
             r'\s*\('\
-            r'(?P<percentages>(?:\s*\d+(?:\.\d+)?%?,?)+)'\
+            r'(?P<percentages>\s*\d+(?:\.\d+%?)(?:,\s*\d+(?:\.\d+%?))*)'\
             r'\s*\)'\
             r')?'
 

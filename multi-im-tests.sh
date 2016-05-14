@@ -22,7 +22,7 @@ for P in $BUILD_PATHS; do
     # run the tests using a custom built version of imagemagick
     # (prepend custom built path so it can be used by the tests)
     NEW_PATH="$PWD/$P/bin:$PATH"
-    CMD="PATH=\"" "$NEW_PATH" "\" ./run-tests.sh >$OUT_FILE 2>&1;"
+    CMD="PATH=\"""$NEW_PATH""\" ./run-tests.sh >$OUT_FILE 2>&1;"
     echo "$CMD"
 done | xargs -I% -P 6 /bin/bash -c '%';
 
