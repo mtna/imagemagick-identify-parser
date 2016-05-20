@@ -84,6 +84,7 @@ ON($objPath like "/mtnaZone/demo/images\*.dcm"
    msiSetKeyValuePairsToObj(*kvp, *metaPath, *objType);
    writeLine("stdout","added metadata *out to object with path *metaPath");
   }
+)
 ```
 
 <a name="contribute"></a>
