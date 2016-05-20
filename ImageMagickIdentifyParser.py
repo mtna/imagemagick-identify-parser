@@ -3,7 +3,6 @@
 #  Utility class to parse the ImageMagick identify -verbose <image> command
 #  and convert to various formats for further reuse by code or applications.
 # 
-# 
 # Copyright (c) 2016, Metadata Technology North America Inc. (http://www.mtna.us)
 # All rights reserved.
 # 
@@ -584,7 +583,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='ImageMagick identify -verbose parser and convertor')
     parser.add_argument("filename", help="The input file")
-    parser.add_argument('--type' , '-t',default='json', help='The output type. Can be json|irods|raw|xml.')
+    parser.add_argument('--type' , '-t',default='json', help='The output type. Can be json|irods|raw|xml')
     parser.add_argument('--histo', '-H',action='store_true', help='Includes histogram section in output')
     args = parser.parse_args()
     
