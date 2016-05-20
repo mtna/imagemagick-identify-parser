@@ -16,6 +16,8 @@ The [ImageMagick](http://imagemagick.org)[`identify`](http://imagemagick.org/scr
 
 This Python 2.x`ImageMagickIdentifyParser` utility class can be used to call or parse the `identify -verbose <image>` tool text output and converts it into various formats such as JSON, XML, and iRODS for further integration reuse by code or applications.
 
+See the [samples](samples) folder for examples.
+
 <a name="install"></a>
 ## Install
 
