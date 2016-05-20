@@ -8,9 +8,8 @@ class TestsPDF(unittest.TestCase):
     @classmethod
     def setUp(self):
         if self.obj is None:
-            global imVersion
             self.obj = ImageMagickIdentifyParser()
-            imVersion = self.obj.getIMVersion()
+            self.reason_skip_multipage_pdf = self.obj.getIMVersion() in set(['6.8.0-7','6.8.1-5','6.8.1-0','6.8.0-10'])
 
             self.obj.optHistogram = True
             self.obj.parse('./samples/sample.pdf')
@@ -47,16 +46,21 @@ class TestsPDF(unittest.TestCase):
         d = self.obj.Data
         self.assertGreaterEqual(len(d['children']),1,'The PDF has at least 1 page')
 
-    @unittest.skipIf(lambda: (imVersion in ['6.8.0-7','6.8.1-5','6.8.1-0','6.8.0-10']),'skipping test because of IM version')
     def test_1_exact_pagecount(self):
+
+        if self.reason_skip_multipage_pdf:
+            raise unittest.SkipTest("skip test because version doesn't support multipage")
+
         d = self.obj.Data
         self.assertEqual(len(d['children']),7,'The PDF has exactly 7 pages')
 
     def test_2_histo_at_least_one_node(self):
         self.assertGreater(self.histoNodeCount, 0, 'at least one histogram line node')
 
-    @unittest.skipIf(lambda: (imVersion in ['6.8.0-7','6.8.1-5','6.8.1-0','6.8.0-10']),'skipping test because of IM version')
     def test_3_histo_exact_node_count(self):
+        if self.reason_skip_multipage_pdf:
+            raise unittest.SkipTest("skip test because version doesn't support multipage")
+
         self.assertEqual(self.histoNodeCount, 632, 'exact histo node count')
 
     def test_4_histo_no_children_for_histogram_nodes(self):
