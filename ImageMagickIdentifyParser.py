@@ -35,11 +35,11 @@
 import distutils.spawn
 import os.path
 import json
-import os
-from subprocess import PIPE, Popen
-import re
-import sys
 import lxml.etree as etree
+import os
+import re
+from subprocess import PIPE, Popen
+import sys
 from xml.etree.ElementTree import ElementTree,SubElement,Element,dump,tostring
 
 
@@ -542,7 +542,7 @@ class ImageMagickIdentifyParser:
             	# don't serialize histogram
             	pass
             else:
-                ret += "%"+name+"="+value
+                ret +="%"+name+"="+json.dumps(value)
         return ret
 
     def toIRODS(self):
@@ -583,11 +583,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='ImageMagick identify -verbose parser and convertor')
     parser.add_argument("filename", help="The input file")
     parser.add_argument('--type' , '-t',default='json', help='The output type. Can be json|irods|raw|xml.')
-    parser.add_argument('--histo', '-H',default='off' , help='Flag for histogram section parsing. Can be off|on (off by default)')
+    parser.add_argument('--histo', '-H',action='store_true', help='Includes histogram section in output')
     args = parser.parse_args()
     
 
-    o.optHistogram = (args.histo == 'on')
+    o.optHistogram = (args.histo)
     o.parse(args.filename)
 
     if args.type == 'json':

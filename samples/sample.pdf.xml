@@ -1,0 +1,794 @@
+<Images file="./samples/sample.pdf">
+  <Image>
+    <Format>PDF (Portable Document Format)</Format>
+    <MimeType>application/pdf</MimeType>
+    <Class>DirectClass</Class>
+    <Geometry>612x792+0+0</Geometry>
+    <Resolution>72x72</Resolution>
+    <PrintSize>8.5x11</PrintSize>
+    <Units>Undefined</Units>
+    <Type>PaletteAlpha</Type>
+    <Endianess>Undefined</Endianess>
+    <Colorspace>sRGB</Colorspace>
+    <Depth>16/8-bit</Depth>
+    <ChannelDepth>
+      <red>8-bit</red>
+      <green>8-bit</green>
+      <blue>8-bit</blue>
+      <alpha>8-bit</alpha>
+    </ChannelDepth>
+    <ChannelStatistics>
+      <Pixels>484704</Pixels>
+      <Red>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>62554.1 (0.954514)</mean>
+        <standardDeviation>13498.1 (0.205968)</standardDeviation>
+        <kurtosis>16.8086</kurtosis>
+        <skewness>-4.32763</skewness>
+        <entropy>0.130379</entropy>
+      </Red>
+      <Green>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>62620.8 (0.955532)</mean>
+        <standardDeviation>13277.6 (0.202603)</standardDeviation>
+        <kurtosis>17.4872</kurtosis>
+        <skewness>-4.39349</skewness>
+        <entropy>0.130489</entropy>
+      </Green>
+      <Blue>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>62667 (0.956237)</mean>
+        <standardDeviation>13153.8 (0.200713)</standardDeviation>
+        <kurtosis>18.0514</kurtosis>
+        <skewness>-4.45236</skewness>
+        <entropy>0.11723</entropy>
+      </Blue>
+      <Alpha>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>1820.61 (0.0277808)</mean>
+        <standardDeviation>9361.01 (0.14284)</standardDeviation>
+        <kurtosis>31.9411</kurtosis>
+        <skewness>-5.63041</skewness>
+        <entropy>0.187967</entropy>
+      </Alpha>
+    </ChannelStatistics>
+    <ImageStatistics>
+      <Overall>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>62889.1 (0.959625)</mean>
+        <standardDeviation>12441.3 (0.189842)</standardDeviation>
+        <kurtosis>20.0864</kurtosis>
+        <skewness>-4.66078</skewness>
+        <entropy>0.141516</entropy>
+      </Overall>
+    </ImageStatistics>
+    <Alpha>srgba(255,255,255,0)   #FFFFFFFFFFFF0000</Alpha>
+    <Colors>89</Colors>
+    <RenderingIntent>Perceptual</RenderingIntent>
+    <Gamma>0.454545</Gamma>
+    <Chromaticity>
+      <redPrimary>(0.64,0.33)</redPrimary>
+      <greenPrimary>(0.3,0.6)</greenPrimary>
+      <bluePrimary>(0.15,0.06)</bluePrimary>
+      <whitePoint>(0.3127,0.329)</whitePoint>
+    </Chromaticity>
+    <BackgroundColor>white</BackgroundColor>
+    <BorderColor>srgba(223,223,223,1)</BorderColor>
+    <MatteColor>grey74</MatteColor>
+    <TransparentColor>none</TransparentColor>
+    <Interlace>None</Interlace>
+    <Intensity>Undefined</Intensity>
+    <Compose>Over</Compose>
+    <PageGeometry>612x792+0+0</PageGeometry>
+    <Dispose>Undefined</Dispose>
+    <Iterations>0</Iterations>
+    <Scene>0 of 7</Scene>
+    <Compression>Undefined</Compression>
+    <Orientation>Undefined</Orientation>
+    <Properties>
+      <signature>920d9b139c27ec4aa4a81ae383d2ef2f9505038753bd9e4453ec8ba62d22ff13</signature>
+      <date>
+        <create>2016-05-09T10:34:25+02:00</create>
+        <modify>2016-05-09T10:34:25+02:00</modify>
+      </date>
+      <pdf>
+        <Version>PDF-1.5</Version>
+      </pdf>
+    </Properties>
+    <Artifacts>
+      <filename>./samples/sample.pdf</filename>
+      <verbose>true</verbose>
+    </Artifacts>
+    <Tainted>False</Tainted>
+    <Filesize>25.9KB</Filesize>
+    <NumberPixels>485K</NumberPixels>
+    <PixelsPerSecond>48.47GB</PixelsPerSecond>
+    <UserTime>0.000u</UserTime>
+    <ElapsedTime>0:01.000</ElapsedTime>
+    <Version>ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org</Version>
+  </Image>
+  <Image>
+    <Format>PDF (Portable Document Format)</Format>
+    <MimeType>application/pdf</MimeType>
+    <Class>DirectClass</Class>
+    <Geometry>612x792+0+0</Geometry>
+    <Resolution>72x72</Resolution>
+    <PrintSize>8.5x11</PrintSize>
+    <Units>Undefined</Units>
+    <Type>PaletteAlpha</Type>
+    <Endianess>Undefined</Endianess>
+    <Colorspace>sRGB</Colorspace>
+    <Depth>16/8-bit</Depth>
+    <ChannelDepth>
+      <red>8-bit</red>
+      <green>8-bit</green>
+      <blue>8-bit</blue>
+      <alpha>8-bit</alpha>
+    </ChannelDepth>
+    <ChannelStatistics>
+      <Pixels>484704</Pixels>
+      <Red>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>59445.2 (0.907076)</mean>
+        <standardDeviation>18810.9 (0.287036)</standardDeviation>
+        <kurtosis>5.78409</kurtosis>
+        <skewness>-2.78192</skewness>
+        <entropy>0.184351</entropy>
+      </Red>
+      <Green>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>59603.8 (0.909496)</mean>
+        <standardDeviation>18492.6 (0.282179)</standardDeviation>
+        <kurtosis>6.19432</kurtosis>
+        <skewness>-2.84579</skewness>
+        <entropy>0.173274</entropy>
+      </Green>
+      <Blue>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>59661.1 (0.910371)</mean>
+        <standardDeviation>18400.1 (0.280767)</standardDeviation>
+        <kurtosis>6.35397</kurtosis>
+        <skewness>-2.87241</skewness>
+        <entropy>0.164451</entropy>
+      </Blue>
+      <Alpha>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>2513.59 (0.038355)</mean>
+        <standardDeviation>9007.98 (0.137453)</standardDeviation>
+        <kurtosis>16.8594</kurtosis>
+        <skewness>-4.05222</skewness>
+        <entropy>0.285178</entropy>
+      </Alpha>
+    </ChannelStatistics>
+    <ImageStatistics>
+      <Overall>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>60432.9 (0.922147)</mean>
+        <standardDeviation>16699.8 (0.254823)</standardDeviation>
+        <kurtosis>8.39003</kurtosis>
+        <skewness>-3.18894</skewness>
+        <entropy>0.201813</entropy>
+      </Overall>
+    </ImageStatistics>
+    <Alpha>srgba(255,255,255,0)   #FFFFFFFFFFFF0000</Alpha>
+    <Colors>110</Colors>
+    <RenderingIntent>Perceptual</RenderingIntent>
+    <Gamma>0.454545</Gamma>
+    <Chromaticity>
+      <redPrimary>(0.64,0.33)</redPrimary>
+      <greenPrimary>(0.3,0.6)</greenPrimary>
+      <bluePrimary>(0.15,0.06)</bluePrimary>
+      <whitePoint>(0.3127,0.329)</whitePoint>
+    </Chromaticity>
+    <BackgroundColor>white</BackgroundColor>
+    <BorderColor>srgba(223,223,223,1)</BorderColor>
+    <MatteColor>grey74</MatteColor>
+    <TransparentColor>none</TransparentColor>
+    <Interlace>None</Interlace>
+    <Intensity>Undefined</Intensity>
+    <Compose>Over</Compose>
+    <PageGeometry>612x792+0+0</PageGeometry>
+    <Dispose>Undefined</Dispose>
+    <Iterations>0</Iterations>
+    <Scene>1 of 7</Scene>
+    <Compression>Undefined</Compression>
+    <Orientation>Undefined</Orientation>
+    <Properties>
+      <signature>faa7afa0265001c793a41bfb1be255ce5bc262fc3dd182e7c5d4fd5d398c6b1e</signature>
+      <date>
+        <create>2016-05-09T10:34:25+02:00</create>
+        <modify>2016-05-09T10:34:25+02:00</modify>
+      </date>
+      <pdf>
+        <Version>PDF-1.5</Version>
+      </pdf>
+    </Properties>
+    <Artifacts>
+      <filename>./samples/sample.pdf</filename>
+      <verbose>true</verbose>
+    </Artifacts>
+    <Tainted>False</Tainted>
+    <Filesize>25.9KB</Filesize>
+    <NumberPixels>485K</NumberPixels>
+    <PixelsPerSecond>16.157GB</PixelsPerSecond>
+    <UserTime>0.000u</UserTime>
+    <ElapsedTime>0:01.000</ElapsedTime>
+    <Version>ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org</Version>
+  </Image>
+  <Image>
+    <Format>PDF (Portable Document Format)</Format>
+    <MimeType>application/pdf</MimeType>
+    <Class>DirectClass</Class>
+    <Geometry>612x792+0+0</Geometry>
+    <Resolution>72x72</Resolution>
+    <PrintSize>8.5x11</PrintSize>
+    <Units>Undefined</Units>
+    <Type>PaletteAlpha</Type>
+    <Endianess>Undefined</Endianess>
+    <Colorspace>sRGB</Colorspace>
+    <Depth>16/8-bit</Depth>
+    <ChannelDepth>
+      <red>8-bit</red>
+      <green>8-bit</green>
+      <blue>8-bit</blue>
+      <alpha>8-bit</alpha>
+    </ChannelDepth>
+    <ChannelStatistics>
+      <Pixels>484704</Pixels>
+      <Red>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>57930.8 (0.883967)</mean>
+        <standardDeviation>20883.5 (0.318661)</standardDeviation>
+        <kurtosis>3.72436</kurtosis>
+        <skewness>-2.38909</skewness>
+        <entropy>0.217915</entropy>
+      </Red>
+      <Green>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>58024 (0.88539)</mean>
+        <standardDeviation>20720.2 (0.31617)</standardDeviation>
+        <kurtosis>3.87394</kurtosis>
+        <skewness>-2.4164</skewness>
+        <entropy>0.21878</entropy>
+      </Green>
+      <Blue>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>58048.4 (0.885762)</mean>
+        <standardDeviation>20688.1 (0.315681)</standardDeviation>
+        <kurtosis>3.91603</kurtosis>
+        <skewness>-2.42481</skewness>
+        <entropy>0.201543</entropy>
+      </Blue>
+      <Alpha>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>3085.26 (0.047078)</mean>
+        <standardDeviation>9856.58 (0.150402)</standardDeviation>
+        <kurtosis>12.4994</kurtosis>
+        <skewness>-3.54976</skewness>
+        <entropy>0.366108</entropy>
+      </Alpha>
+    </ChannelStatistics>
+    <ImageStatistics>
+      <Overall>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>59113.3 (0.90201)</mean>
+        <standardDeviation>18645.3 (0.28451)</standardDeviation>
+        <kurtosis>5.72513</kurtosis>
+        <skewness>-2.75516</skewness>
+        <entropy>0.251086</entropy>
+      </Overall>
+    </ImageStatistics>
+    <Alpha>srgba(255,255,255,0)   #FFFFFFFFFFFF0000</Alpha>
+    <Colors>107</Colors>
+    <RenderingIntent>Perceptual</RenderingIntent>
+    <Gamma>0.454545</Gamma>
+    <Chromaticity>
+      <redPrimary>(0.64,0.33)</redPrimary>
+      <greenPrimary>(0.3,0.6)</greenPrimary>
+      <bluePrimary>(0.15,0.06)</bluePrimary>
+      <whitePoint>(0.3127,0.329)</whitePoint>
+    </Chromaticity>
+    <BackgroundColor>white</BackgroundColor>
+    <BorderColor>srgba(223,223,223,1)</BorderColor>
+    <MatteColor>grey74</MatteColor>
+    <TransparentColor>none</TransparentColor>
+    <Interlace>None</Interlace>
+    <Intensity>Undefined</Intensity>
+    <Compose>Over</Compose>
+    <PageGeometry>612x792+0+0</PageGeometry>
+    <Dispose>Undefined</Dispose>
+    <Iterations>0</Iterations>
+    <Scene>2 of 7</Scene>
+    <Compression>Undefined</Compression>
+    <Orientation>Undefined</Orientation>
+    <Properties>
+      <signature>ba59be74cb1507872c90fab71672cf6d520876b2875ea998a5c23e00fa0b4a56</signature>
+      <date>
+        <create>2016-05-09T10:34:25+02:00</create>
+        <modify>2016-05-09T10:34:25+02:00</modify>
+      </date>
+      <pdf>
+        <Version>PDF-1.5</Version>
+      </pdf>
+    </Properties>
+    <Artifacts>
+      <filename>./samples/sample.pdf</filename>
+      <verbose>true</verbose>
+    </Artifacts>
+    <Tainted>False</Tainted>
+    <Filesize>25.9KB</Filesize>
+    <NumberPixels>485K</NumberPixels>
+    <PixelsPerSecond>9.504GB</PixelsPerSecond>
+    <UserTime>0.000u</UserTime>
+    <ElapsedTime>0:01.000</ElapsedTime>
+    <Version>ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org</Version>
+  </Image>
+  <Image>
+    <Format>PDF (Portable Document Format)</Format>
+    <MimeType>application/pdf</MimeType>
+    <Class>DirectClass</Class>
+    <Geometry>612x792+0+0</Geometry>
+    <Resolution>72x72</Resolution>
+    <PrintSize>8.5x11</PrintSize>
+    <Units>Undefined</Units>
+    <Type>PaletteAlpha</Type>
+    <Endianess>Undefined</Endianess>
+    <Colorspace>sRGB</Colorspace>
+    <Depth>16/8-bit</Depth>
+    <ChannelDepth>
+      <red>8-bit</red>
+      <green>8-bit</green>
+      <blue>8-bit</blue>
+      <alpha>8-bit</alpha>
+    </ChannelDepth>
+    <ChannelStatistics>
+      <Pixels>484704</Pixels>
+      <Red>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>60225.1 (0.918976)</mean>
+        <standardDeviation>17765.6 (0.271085)</standardDeviation>
+        <kurtosis>7.38972</kurtosis>
+        <skewness>-3.05898</skewness>
+        <entropy>0.161845</entropy>
+      </Red>
+      <Green>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>60471.1 (0.92273)</mean>
+        <standardDeviation>17141.2 (0.261559)</standardDeviation>
+        <kurtosis>8.07664</kurtosis>
+        <skewness>-3.15228</skewness>
+        <entropy>0.168933</entropy>
+      </Green>
+      <Blue>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>60432.4 (0.922139)</mean>
+        <standardDeviation>17292.3 (0.263864)</standardDeviation>
+        <kurtosis>7.96098</kurtosis>
+        <skewness>-3.14266</skewness>
+        <entropy>0.152608</entropy>
+      </Blue>
+      <Alpha>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>2090.65 (0.0319012)</mean>
+        <standardDeviation>8132.24 (0.12409)</standardDeviation>
+        <kurtosis>20.3265</kurtosis>
+        <skewness>-4.42621</skewness>
+        <entropy>0.251107</entropy>
+      </Alpha>
+    </ChannelStatistics>
+    <ImageStatistics>
+      <Overall>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>61143.2 (0.932986)</mean>
+        <standardDeviation>15609.3 (0.238182)</standardDeviation>
+        <kurtosis>10.5127</kurtosis>
+        <skewness>-3.50307</skewness>
+        <entropy>0.183623</entropy>
+      </Overall>
+    </ImageStatistics>
+    <Alpha>srgba(255,255,255,0)   #FFFFFFFFFFFF0000</Alpha>
+    <Colors>120</Colors>
+    <RenderingIntent>Perceptual</RenderingIntent>
+    <Gamma>0.454545</Gamma>
+    <Chromaticity>
+      <redPrimary>(0.64,0.33)</redPrimary>
+      <greenPrimary>(0.3,0.6)</greenPrimary>
+      <bluePrimary>(0.15,0.06)</bluePrimary>
+      <whitePoint>(0.3127,0.329)</whitePoint>
+    </Chromaticity>
+    <BackgroundColor>white</BackgroundColor>
+    <BorderColor>srgba(223,223,223,1)</BorderColor>
+    <MatteColor>grey74</MatteColor>
+    <TransparentColor>none</TransparentColor>
+    <Interlace>None</Interlace>
+    <Intensity>Undefined</Intensity>
+    <Compose>Over</Compose>
+    <PageGeometry>612x792+0+0</PageGeometry>
+    <Dispose>Undefined</Dispose>
+    <Iterations>0</Iterations>
+    <Scene>3 of 7</Scene>
+    <Compression>Undefined</Compression>
+    <Orientation>Undefined</Orientation>
+    <Properties>
+      <signature>cf3db34c4e77e750a378f973e5e20dd2289119d656266791705ba16ca11e6d22</signature>
+      <date>
+        <create>2016-05-09T10:34:25+02:00</create>
+        <modify>2016-05-09T10:34:25+02:00</modify>
+      </date>
+      <pdf>
+        <Version>PDF-1.5</Version>
+      </pdf>
+    </Properties>
+    <Artifacts>
+      <filename>./samples/sample.pdf</filename>
+      <verbose>true</verbose>
+    </Artifacts>
+    <Tainted>False</Tainted>
+    <Filesize>25.9KB</Filesize>
+    <NumberPixels>485K</NumberPixels>
+    <PixelsPerSecond>6.8268GB</PixelsPerSecond>
+    <UserTime>0.000u</UserTime>
+    <ElapsedTime>0:01.000</ElapsedTime>
+    <Version>ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org</Version>
+  </Image>
+  <Image>
+    <Format>PDF (Portable Document Format)</Format>
+    <MimeType>application/pdf</MimeType>
+    <Class>DirectClass</Class>
+    <Geometry>612x792+0+0</Geometry>
+    <Resolution>72x72</Resolution>
+    <PrintSize>8.5x11</PrintSize>
+    <Units>Undefined</Units>
+    <Type>PaletteAlpha</Type>
+    <Endianess>Undefined</Endianess>
+    <Colorspace>sRGB</Colorspace>
+    <Depth>16/8-bit</Depth>
+    <ChannelDepth>
+      <red>8-bit</red>
+      <green>8-bit</green>
+      <blue>8-bit</blue>
+      <alpha>8-bit</alpha>
+    </ChannelDepth>
+    <ChannelStatistics>
+      <Pixels>484704</Pixels>
+      <Red>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>57353.4 (0.875157)</mean>
+        <standardDeviation>21619.8 (0.329898)</standardDeviation>
+        <kurtosis>3.13644</kurtosis>
+        <skewness>-2.26552</skewness>
+        <entropy>0.359245</entropy>
+      </Red>
+      <Green>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>57388.2 (0.875688)</mean>
+        <standardDeviation>21547.9 (0.328799)</standardDeviation>
+        <kurtosis>3.17552</kurtosis>
+        <skewness>-2.27229</skewness>
+        <entropy>0.284707</entropy>
+      </Green>
+      <Blue>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>57413.1 (0.876068)</mean>
+        <standardDeviation>21505.2 (0.328148)</standardDeviation>
+        <kurtosis>3.21159</kurtosis>
+        <skewness>-2.27905</skewness>
+        <entropy>0.284737</entropy>
+      </Blue>
+      <Alpha>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>3385.67 (0.051662)</mean>
+        <standardDeviation>10431.3 (0.159171)</standardDeviation>
+        <kurtosis>11.3942</kurtosis>
+        <skewness>-3.4074</skewness>
+        <entropy>0.631549</entropy>
+      </Alpha>
+    </ChannelStatistics>
+    <ImageStatistics>
+      <Overall>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>58576 (0.893813)</mean>
+        <standardDeviation>19384.3 (0.295786)</standardDeviation>
+        <kurtosis>4.89981</kurtosis>
+        <skewness>-2.60641</skewness>
+        <entropy>0.390059</entropy>
+      </Overall>
+    </ImageStatistics>
+    <Alpha>srgba(255,255,255,0)   #FFFFFFFFFFFF0000</Alpha>
+    <Colors>64</Colors>
+    <RenderingIntent>Perceptual</RenderingIntent>
+    <Gamma>0.454545</Gamma>
+    <Chromaticity>
+      <redPrimary>(0.64,0.33)</redPrimary>
+      <greenPrimary>(0.3,0.6)</greenPrimary>
+      <bluePrimary>(0.15,0.06)</bluePrimary>
+      <whitePoint>(0.3127,0.329)</whitePoint>
+    </Chromaticity>
+    <BackgroundColor>white</BackgroundColor>
+    <BorderColor>srgba(223,223,223,1)</BorderColor>
+    <MatteColor>grey74</MatteColor>
+    <TransparentColor>none</TransparentColor>
+    <Interlace>None</Interlace>
+    <Intensity>Undefined</Intensity>
+    <Compose>Over</Compose>
+    <PageGeometry>612x792+0+0</PageGeometry>
+    <Dispose>Undefined</Dispose>
+    <Iterations>0</Iterations>
+    <Scene>4 of 7</Scene>
+    <Compression>Undefined</Compression>
+    <Orientation>Undefined</Orientation>
+    <Properties>
+      <signature>666aa797f8bbd1157532c177c20f1e77fcbc16137d4e1e27975d784c4cf527f7</signature>
+      <date>
+        <create>2016-05-09T10:34:25+02:00</create>
+        <modify>2016-05-09T10:34:25+02:00</modify>
+      </date>
+      <pdf>
+        <Version>PDF-1.5</Version>
+      </pdf>
+    </Properties>
+    <Artifacts>
+      <filename>./samples/sample.pdf</filename>
+      <verbose>true</verbose>
+    </Artifacts>
+    <Tainted>False</Tainted>
+    <Filesize>25.9KB</Filesize>
+    <NumberPixels>485K</NumberPixels>
+    <PixelsPerSecond>5.3264GB</PixelsPerSecond>
+    <UserTime>0.000u</UserTime>
+    <ElapsedTime>0:01.000</ElapsedTime>
+    <Version>ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org</Version>
+  </Image>
+  <Image>
+    <Format>PDF (Portable Document Format)</Format>
+    <MimeType>application/pdf</MimeType>
+    <Class>DirectClass</Class>
+    <Geometry>612x792+0+0</Geometry>
+    <Resolution>72x72</Resolution>
+    <PrintSize>8.5x11</PrintSize>
+    <Units>Undefined</Units>
+    <Type>PaletteAlpha</Type>
+    <Endianess>Undefined</Endianess>
+    <Colorspace>sRGB</Colorspace>
+    <Depth>16/8-bit</Depth>
+    <ChannelDepth>
+      <red>8-bit</red>
+      <green>8-bit</green>
+      <blue>8-bit</blue>
+      <alpha>8-bit</alpha>
+    </ChannelDepth>
+    <ChannelStatistics>
+      <Pixels>484704</Pixels>
+      <Red>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>57974.8 (0.884639)</mean>
+        <standardDeviation>20910.3 (0.319071)</standardDeviation>
+        <kurtosis>3.78817</kurtosis>
+        <skewness>-2.4053</skewness>
+        <entropy>0.266365</entropy>
+      </Red>
+      <Green>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>57994.3 (0.884936)</mean>
+        <standardDeviation>20868.1 (0.318427)</standardDeviation>
+        <kurtosis>3.8138</kurtosis>
+        <skewness>-2.40952</skewness>
+        <entropy>0.229445</entropy>
+      </Green>
+      <Blue>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>58008.2 (0.885149)</mean>
+        <standardDeviation>20843 (0.318044)</standardDeviation>
+        <kurtosis>3.83734</kurtosis>
+        <skewness>-2.4137</skewness>
+        <entropy>0.229468</entropy>
+      </Blue>
+      <Alpha>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>3076.5 (0.0469443)</mean>
+        <standardDeviation>9899.83 (0.151062)</standardDeviation>
+        <kurtosis>12.6646</kurtosis>
+        <skewness>-3.574</skewness>
+        <entropy>0.467049</entropy>
+      </Alpha>
+    </ChannelStatistics>
+    <ImageStatistics>
+      <Overall>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>59109 (0.901945)</mean>
+        <standardDeviation>18742.7 (0.285996)</standardDeviation>
+        <kurtosis>5.70005</kurtosis>
+        <skewness>-2.75556</skewness>
+        <entropy>0.298082</entropy>
+      </Overall>
+    </ImageStatistics>
+    <Alpha>srgba(255,255,255,0)   #FFFFFFFFFFFF0000</Alpha>
+    <Colors>74</Colors>
+    <RenderingIntent>Perceptual</RenderingIntent>
+    <Gamma>0.454545</Gamma>
+    <Chromaticity>
+      <redPrimary>(0.64,0.33)</redPrimary>
+      <greenPrimary>(0.3,0.6)</greenPrimary>
+      <bluePrimary>(0.15,0.06)</bluePrimary>
+      <whitePoint>(0.3127,0.329)</whitePoint>
+    </Chromaticity>
+    <BackgroundColor>white</BackgroundColor>
+    <BorderColor>srgba(223,223,223,1)</BorderColor>
+    <MatteColor>grey74</MatteColor>
+    <TransparentColor>none</TransparentColor>
+    <Interlace>None</Interlace>
+    <Intensity>Undefined</Intensity>
+    <Compose>Over</Compose>
+    <PageGeometry>612x792+0+0</PageGeometry>
+    <Dispose>Undefined</Dispose>
+    <Iterations>0</Iterations>
+    <Scene>5 of 7</Scene>
+    <Compression>Undefined</Compression>
+    <Orientation>Undefined</Orientation>
+    <Properties>
+      <signature>97b38d1e61fe5245483db523dc53ebce51eabe53f5b6865de4ebb5bb40d60db9</signature>
+      <date>
+        <create>2016-05-09T10:34:25+02:00</create>
+        <modify>2016-05-09T10:34:25+02:00</modify>
+      </date>
+      <pdf>
+        <Version>PDF-1.5</Version>
+      </pdf>
+    </Properties>
+    <Artifacts>
+      <filename>./samples/sample.pdf</filename>
+      <verbose>true</verbose>
+    </Artifacts>
+    <Tainted>False</Tainted>
+    <Filesize>25.9KB</Filesize>
+    <NumberPixels>485K</NumberPixels>
+    <PixelsPerSecond>4.4064GB</PixelsPerSecond>
+    <UserTime>0.000u</UserTime>
+    <ElapsedTime>0:01.000</ElapsedTime>
+    <Version>ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org</Version>
+  </Image>
+  <Image>
+    <Format>PDF (Portable Document Format)</Format>
+    <MimeType>application/pdf</MimeType>
+    <Class>DirectClass</Class>
+    <Geometry>612x792+0+0</Geometry>
+    <Resolution>72x72</Resolution>
+    <PrintSize>8.5x11</PrintSize>
+    <Units>Undefined</Units>
+    <Type>PaletteAlpha</Type>
+    <Endianess>Undefined</Endianess>
+    <Colorspace>sRGB</Colorspace>
+    <Depth>16/8-bit</Depth>
+    <ChannelDepth>
+      <red>8-bit</red>
+      <green>8-bit</green>
+      <blue>8-bit</blue>
+      <alpha>8-bit</alpha>
+    </ChannelDepth>
+    <ChannelStatistics>
+      <Pixels>484704</Pixels>
+      <Red>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>61793.5 (0.942908)</mean>
+        <standardDeviation>15189.1 (0.231771)</standardDeviation>
+        <kurtosis>12.5542</kurtosis>
+        <skewness>-3.81443</skewness>
+        <entropy>0.204314</entropy>
+      </Red>
+      <Green>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>61802.9 (0.943051)</mean>
+        <standardDeviation>15158.8 (0.231309)</standardDeviation>
+        <kurtosis>12.6038</kurtosis>
+        <skewness>-3.81972</skewness>
+        <entropy>0.161926</entropy>
+      </Green>
+      <Blue>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>61809.6 (0.943153)</mean>
+        <standardDeviation>15140.5 (0.23103)</standardDeviation>
+        <kurtosis>12.6498</kurtosis>
+        <skewness>-3.82498</skewness>
+        <entropy>0.161957</entropy>
+      </Blue>
+      <Alpha>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>1554.02 (0.0237128)</mean>
+        <standardDeviation>7263.07 (0.110827)</standardDeviation>
+        <kurtosis>29.7817</kurtosis>
+        <skewness>-5.325</skewness>
+        <entropy>0.330762</entropy>
+      </Alpha>
+    </ChannelStatistics>
+    <ImageStatistics>
+      <Overall>
+        <min>0 (0)</min>
+        <max>65535 (1)</max>
+        <mean>62346.7 (0.95135)</mean>
+        <standardDeviation>13624.3 (0.207894)</standardDeviation>
+        <kurtosis>16.1641</kurtosis>
+        <skewness>-4.23619</skewness>
+        <entropy>0.21474</entropy>
+      </Overall>
+    </ImageStatistics>
+    <Alpha>srgba(255,255,255,0)   #FFFFFFFFFFFF0000</Alpha>
+    <Colors>68</Colors>
+    <RenderingIntent>Perceptual</RenderingIntent>
+    <Gamma>0.454545</Gamma>
+    <Chromaticity>
+      <redPrimary>(0.64,0.33)</redPrimary>
+      <greenPrimary>(0.3,0.6)</greenPrimary>
+      <bluePrimary>(0.15,0.06)</bluePrimary>
+      <whitePoint>(0.3127,0.329)</whitePoint>
+    </Chromaticity>
+    <BackgroundColor>white</BackgroundColor>
+    <BorderColor>srgba(223,223,223,1)</BorderColor>
+    <MatteColor>grey74</MatteColor>
+    <TransparentColor>none</TransparentColor>
+    <Interlace>None</Interlace>
+    <Intensity>Undefined</Intensity>
+    <Compose>Over</Compose>
+    <PageGeometry>612x792+0+0</PageGeometry>
+    <Dispose>Undefined</Dispose>
+    <Iterations>0</Iterations>
+    <Scene>6 of 7</Scene>
+    <Compression>Undefined</Compression>
+    <Orientation>Undefined</Orientation>
+    <Properties>
+      <signature>a5affd95ffedf5d72ccb3b753bd40dfa0c72b8db5d3cf01a655f7970a4dfa82d</signature>
+      <date>
+        <create>2016-05-09T10:34:25+02:00</create>
+        <modify>2016-05-09T10:34:25+02:00</modify>
+      </date>
+      <pdf>
+        <Version>PDF-1.5</Version>
+      </pdf>
+    </Properties>
+    <Artifacts>
+      <filename>./samples/sample.pdf</filename>
+      <verbose>true</verbose>
+    </Artifacts>
+    <Tainted>False</Tainted>
+    <Filesize>25.9KB</Filesize>
+    <NumberPixels>485K</NumberPixels>
+    <PixelsPerSecond>3.7574GB</PixelsPerSecond>
+    <UserTime>0.000u</UserTime>
+    <ElapsedTime>0:01.000</ElapsedTime>
+    <Version>ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org</Version>
+  </Image>
+</Images>
+

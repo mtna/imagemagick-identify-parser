@@ -1,116 +1,118 @@
-<Image file="./samples/sample.png">
-  <Format>PNG (Portable Network Graphics)</Format>
-  <MimeType>image/png</MimeType>
-  <Class>DirectClass</Class>
-  <Geometry>333x431+0+0</Geometry>
-  <Resolution>72x72</Resolution>
-  <PrintSize>4.625x5.98611</PrintSize>
-  <Units>Undefined</Units>
-  <Type>TrueColor</Type>
-  <Endianess>Undefined</Endianess>
-  <Colorspace>sRGB</Colorspace>
-  <Depth>8-bit</Depth>
-  <ChannelDepth>
-    <red>8-bit</red>
-    <green>8-bit</green>
-    <blue>8-bit</blue>
-  </ChannelDepth>
-  <ChannelStatistics>
-    <Pixels>143523</Pixels>
-    <Red>
-      <min>0 (0)</min>
-      <max>255 (1)</max>
-      <mean>99.6297 (0.390705)</mean>
-      <standardDeviation>47.8515 (0.187653)</standardDeviation>
-      <kurtosis>0.168761</kurtosis>
-      <skewness>0.380512</skewness>
-      <entropy>0.943836</entropy>
-    </Red>
-    <Green>
-      <min>0 (0)</min>
-      <max>250 (0.980392)</max>
-      <mean>80.1838 (0.314446)</mean>
-      <standardDeviation>45.9033 (0.180013)</standardDeviation>
-      <kurtosis>0.366151</kurtosis>
-      <skewness>0.654878</skewness>
-      <entropy>0.934257</entropy>
-    </Green>
-    <Blue>
-      <min>0 (0)</min>
-      <max>219 (0.858824)</max>
-      <mean>55.5649 (0.217901)</mean>
-      <standardDeviation>42.2194 (0.165566)</standardDeviation>
-      <kurtosis>0.717383</kurtosis>
-      <skewness>0.939468</skewness>
-      <entropy>0.917094</entropy>
-    </Blue>
-  </ChannelStatistics>
-  <ImageStatistics>
-    <Overall>
-      <min>0 (0)</min>
-      <max>255 (1)</max>
-      <mean>78.4595 (0.307684)</mean>
-      <standardDeviation>45.3849 (0.17798)</standardDeviation>
-      <kurtosis>1.17497</kurtosis>
-      <skewness>0.738545</skewness>
-      <entropy>0.931729</entropy>
-    </Overall>
-  </ImageStatistics>
-  <RenderingIntent>Perceptual</RenderingIntent>
-  <Gamma>0.45455</Gamma>
-  <Chromaticity>
-    <redPrimary>(0.64,0.33)</redPrimary>
-    <greenPrimary>(0.3,0.6)</greenPrimary>
-    <bluePrimary>(0.15,0.06)</bluePrimary>
-    <whitePoint>(0.3127,0.329)</whitePoint>
-  </Chromaticity>
-  <BackgroundColor>white</BackgroundColor>
-  <BorderColor>srgb(223,223,223)</BorderColor>
-  <MatteColor>grey74</MatteColor>
-  <TransparentColor>black</TransparentColor>
-  <Interlace>None</Interlace>
-  <Intensity>Undefined</Intensity>
-  <Compose>Over</Compose>
-  <PageGeometry>333x431+0+0</PageGeometry>
-  <Dispose>Undefined</Dispose>
-  <Iterations>0</Iterations>
-  <Compression>Zip</Compression>
-  <Orientation>Undefined</Orientation>
-  <Properties>
-    <signature>1987a48dd74ac5fcdd053817ce5d7bb5950948fc48594969f31d89bea9687d12</signature>
-    <date>
-      <create>2016-05-04T10:56:12+02:00</create>
-      <modify>2016-05-03T18:37:03+02:00</modify>
-    </date>
-    <png>
-      <bKGD>chunk was found (see Background color, above)</bKGD>
-      <cHRM>chunk was found (see Chromaticity, above)</cHRM>
-      <gAMA>gamma=0.45455 (See Gamma, above)</gAMA>
-      <IHDRBitDepthOrig>8</IHDRBitDepthOrig>
-      <IHDRBitDepth>8</IHDRBitDepth>
-      <IHDRColorTypeOrig>2</IHDRColorTypeOrig>
-      <IHDRColorType>2 (Truecolor)</IHDRColorType>
-      <IHDRInterlaceMethod>0 (Not interlaced)</IHDRInterlaceMethod>
-      <IHDRWidthHeight>333, 431</IHDRWidthHeight>
-      <pHYs>x_res=72, y_res=72, units=0</pHYs>
-      <sRGB>intent=0 (Perceptual Intent)</sRGB>
-      <text>4 tEXt/zTXt/iTXt chunks were found</text>
-    </png>
-    <jpeg>
-      <colorspace>2</colorspace>
-      <samplingFactor>2x2,1x1,1x1</samplingFactor>
-    </jpeg>
-  </Properties>
-  <Artifacts>
-    <filename>./samples/sample.png</filename>
-    <verbose>true</verbose>
-  </Artifacts>
-  <Tainted>False</Tainted>
-  <Filesize>326KB</Filesize>
-  <NumberPixels>144K</NumberPixels>
-  <PixelsPerSecond>143.52GB</PixelsPerSecond>
-  <UserTime>0.000u</UserTime>
-  <ElapsedTime>0:01.000</ElapsedTime>
-  <Version>ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org</Version>
-</Image>
+<Images file="./samples/sample.png">
+  <Image>
+    <Format>PNG (Portable Network Graphics)</Format>
+    <MimeType>image/png</MimeType>
+    <Class>DirectClass</Class>
+    <Geometry>333x431+0+0</Geometry>
+    <Resolution>72x72</Resolution>
+    <PrintSize>4.625x5.98611</PrintSize>
+    <Units>Undefined</Units>
+    <Type>TrueColor</Type>
+    <Endianess>Undefined</Endianess>
+    <Colorspace>sRGB</Colorspace>
+    <Depth>8-bit</Depth>
+    <ChannelDepth>
+      <red>8-bit</red>
+      <green>8-bit</green>
+      <blue>8-bit</blue>
+    </ChannelDepth>
+    <ChannelStatistics>
+      <Pixels>143523</Pixels>
+      <Red>
+        <min>0 (0)</min>
+        <max>255 (1)</max>
+        <mean>99.6297 (0.390705)</mean>
+        <standardDeviation>47.8515 (0.187653)</standardDeviation>
+        <kurtosis>0.168761</kurtosis>
+        <skewness>0.380512</skewness>
+        <entropy>0.943836</entropy>
+      </Red>
+      <Green>
+        <min>0 (0)</min>
+        <max>250 (0.980392)</max>
+        <mean>80.1838 (0.314446)</mean>
+        <standardDeviation>45.9033 (0.180013)</standardDeviation>
+        <kurtosis>0.366151</kurtosis>
+        <skewness>0.654878</skewness>
+        <entropy>0.934257</entropy>
+      </Green>
+      <Blue>
+        <min>0 (0)</min>
+        <max>219 (0.858824)</max>
+        <mean>55.5649 (0.217901)</mean>
+        <standardDeviation>42.2194 (0.165566)</standardDeviation>
+        <kurtosis>0.717383</kurtosis>
+        <skewness>0.939468</skewness>
+        <entropy>0.917094</entropy>
+      </Blue>
+    </ChannelStatistics>
+    <ImageStatistics>
+      <Overall>
+        <min>0 (0)</min>
+        <max>255 (1)</max>
+        <mean>78.4595 (0.307684)</mean>
+        <standardDeviation>45.3849 (0.17798)</standardDeviation>
+        <kurtosis>1.17497</kurtosis>
+        <skewness>0.738545</skewness>
+        <entropy>0.931729</entropy>
+      </Overall>
+    </ImageStatistics>
+    <RenderingIntent>Perceptual</RenderingIntent>
+    <Gamma>0.45455</Gamma>
+    <Chromaticity>
+      <redPrimary>(0.64,0.33)</redPrimary>
+      <greenPrimary>(0.3,0.6)</greenPrimary>
+      <bluePrimary>(0.15,0.06)</bluePrimary>
+      <whitePoint>(0.3127,0.329)</whitePoint>
+    </Chromaticity>
+    <BackgroundColor>white</BackgroundColor>
+    <BorderColor>srgb(223,223,223)</BorderColor>
+    <MatteColor>grey74</MatteColor>
+    <TransparentColor>black</TransparentColor>
+    <Interlace>None</Interlace>
+    <Intensity>Undefined</Intensity>
+    <Compose>Over</Compose>
+    <PageGeometry>333x431+0+0</PageGeometry>
+    <Dispose>Undefined</Dispose>
+    <Iterations>0</Iterations>
+    <Compression>Zip</Compression>
+    <Orientation>Undefined</Orientation>
+    <Properties>
+      <signature>1987a48dd74ac5fcdd053817ce5d7bb5950948fc48594969f31d89bea9687d12</signature>
+      <date>
+        <create>2016-05-04T10:56:12+02:00</create>
+        <modify>2016-05-03T18:37:03+02:00</modify>
+      </date>
+      <png>
+        <bKGD>chunk was found (see Background color, above)</bKGD>
+        <cHRM>chunk was found (see Chromaticity, above)</cHRM>
+        <gAMA>gamma=0.45455 (See Gamma, above)</gAMA>
+        <IHDRBitDepthOrig>8</IHDRBitDepthOrig>
+        <IHDRBitDepth>8</IHDRBitDepth>
+        <IHDRColorTypeOrig>2</IHDRColorTypeOrig>
+        <IHDRColorType>2 (Truecolor)</IHDRColorType>
+        <IHDRInterlaceMethod>0 (Not interlaced)</IHDRInterlaceMethod>
+        <IHDRWidthHeight>333, 431</IHDRWidthHeight>
+        <pHYs>x_res=72, y_res=72, units=0</pHYs>
+        <sRGB>intent=0 (Perceptual Intent)</sRGB>
+        <text>4 tEXt/zTXt/iTXt chunks were found</text>
+      </png>
+      <jpeg>
+        <colorspace>2</colorspace>
+        <samplingFactor>2x2,1x1,1x1</samplingFactor>
+      </jpeg>
+    </Properties>
+    <Artifacts>
+      <filename>./samples/sample.png</filename>
+      <verbose>true</verbose>
+    </Artifacts>
+    <Tainted>False</Tainted>
+    <Filesize>326KB</Filesize>
+    <NumberPixels>144K</NumberPixels>
+    <PixelsPerSecond>143.52GB</PixelsPerSecond>
+    <UserTime>0.000u</UserTime>
+    <ElapsedTime>0:01.000</ElapsedTime>
+    <Version>ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org</Version>
+  </Image>
+</Images>
 

@@ -1,101 +1,103 @@
-<Image file="./samples/sample.jpg">
-  <Format>JPEG (Joint Photographic Experts Group JFIF format)</Format>
-  <MimeType>image/jpeg</MimeType>
-  <Class>DirectClass</Class>
-  <Geometry>650x650+0+0</Geometry>
-  <Units>Undefined</Units>
-  <Type>TrueColor</Type>
-  <Endianess>Undefined</Endianess>
-  <Colorspace>sRGB</Colorspace>
-  <Depth>8-bit</Depth>
-  <ChannelDepth>
-    <red>8-bit</red>
-    <green>8-bit</green>
-    <blue>8-bit</blue>
-  </ChannelDepth>
-  <ChannelStatistics>
-    <Pixels>422500</Pixels>
-    <Red>
-      <min>0 (0)</min>
-      <max>253 (0.992157)</max>
-      <mean>157.565 (0.617902)</mean>
-      <standardDeviation>40.3432 (0.158209)</standardDeviation>
-      <kurtosis>0.060044</kurtosis>
-      <skewness>-0.796383</skewness>
-      <entropy>0.910851</entropy>
-    </Red>
-    <Green>
-      <min>0 (0)</min>
-      <max>252 (0.988235)</max>
-      <mean>155.864 (0.61123)</mean>
-      <standardDeviation>43.3988 (0.170191)</standardDeviation>
-      <kurtosis>-0.210185</kurtosis>
-      <skewness>-0.721764</skewness>
-      <entropy>0.915244</entropy>
-    </Green>
-    <Blue>
-      <min>2 (0.00784314)</min>
-      <max>255 (1)</max>
-      <mean>154.038 (0.604071)</mean>
-      <standardDeviation>49.0998 (0.192548)</standardDeviation>
-      <kurtosis>-0.467885</kurtosis>
-      <skewness>-0.646499</skewness>
-      <entropy>0.931708</entropy>
-    </Blue>
-  </ChannelStatistics>
-  <ImageStatistics>
-    <Overall>
-      <min>0 (0)</min>
-      <max>255 (1)</max>
-      <mean>155.822 (0.611068)</mean>
-      <standardDeviation>44.4291 (0.174232)</standardDeviation>
-      <kurtosis>-0.179762</kurtosis>
-      <skewness>-0.729663</skewness>
-      <entropy>0.919268</entropy>
-    </Overall>
-  </ImageStatistics>
-  <RenderingIntent>Perceptual</RenderingIntent>
-  <Gamma>0.454545</Gamma>
-  <Chromaticity>
-    <redPrimary>(0.64,0.33)</redPrimary>
-    <greenPrimary>(0.3,0.6)</greenPrimary>
-    <bluePrimary>(0.15,0.06)</bluePrimary>
-    <whitePoint>(0.3127,0.329)</whitePoint>
-  </Chromaticity>
-  <BackgroundColor>white</BackgroundColor>
-  <BorderColor>srgb(223,223,223)</BorderColor>
-  <MatteColor>grey74</MatteColor>
-  <TransparentColor>black</TransparentColor>
-  <Interlace>None</Interlace>
-  <Intensity>Undefined</Intensity>
-  <Compose>Over</Compose>
-  <PageGeometry>650x650+0+0</PageGeometry>
-  <Dispose>Undefined</Dispose>
-  <Iterations>0</Iterations>
-  <Compression>JPEG</Compression>
-  <Quality>92</Quality>
-  <Orientation>Undefined</Orientation>
-  <Properties>
-    <signature>0b0cf69f58670964641014fde856ace3a4c7e9a4b0390776bcf4c173a9ac9824</signature>
-    <date>
-      <create>2016-05-04T10:56:12+02:00</create>
-      <modify>2016-05-03T18:35:49+02:00</modify>
-    </date>
-    <jpeg>
-      <colorspace>2</colorspace>
-      <samplingFactor>2x2,1x1,1x1</samplingFactor>
-    </jpeg>
-  </Properties>
-  <Artifacts>
-    <filename>./samples/sample.jpg</filename>
-    <verbose>true</verbose>
-  </Artifacts>
-  <Tainted>False</Tainted>
-  <Filesize>46.4KB</Filesize>
-  <NumberPixels>422K</NumberPixels>
-  <PixelsPerSecond>422.5GB</PixelsPerSecond>
-  <UserTime>0.000u</UserTime>
-  <ElapsedTime>0:01.000</ElapsedTime>
-  <Version>ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org</Version>
-</Image>
+<Images file="./samples/sample.jpg">
+  <Image>
+    <Format>JPEG (Joint Photographic Experts Group JFIF format)</Format>
+    <MimeType>image/jpeg</MimeType>
+    <Class>DirectClass</Class>
+    <Geometry>650x650+0+0</Geometry>
+    <Units>Undefined</Units>
+    <Type>TrueColor</Type>
+    <Endianess>Undefined</Endianess>
+    <Colorspace>sRGB</Colorspace>
+    <Depth>8-bit</Depth>
+    <ChannelDepth>
+      <red>8-bit</red>
+      <green>8-bit</green>
+      <blue>8-bit</blue>
+    </ChannelDepth>
+    <ChannelStatistics>
+      <Pixels>422500</Pixels>
+      <Red>
+        <min>0 (0)</min>
+        <max>253 (0.992157)</max>
+        <mean>157.565 (0.617902)</mean>
+        <standardDeviation>40.3432 (0.158209)</standardDeviation>
+        <kurtosis>0.060044</kurtosis>
+        <skewness>-0.796383</skewness>
+        <entropy>0.910851</entropy>
+      </Red>
+      <Green>
+        <min>0 (0)</min>
+        <max>252 (0.988235)</max>
+        <mean>155.864 (0.61123)</mean>
+        <standardDeviation>43.3988 (0.170191)</standardDeviation>
+        <kurtosis>-0.210185</kurtosis>
+        <skewness>-0.721764</skewness>
+        <entropy>0.915244</entropy>
+      </Green>
+      <Blue>
+        <min>2 (0.00784314)</min>
+        <max>255 (1)</max>
+        <mean>154.038 (0.604071)</mean>
+        <standardDeviation>49.0998 (0.192548)</standardDeviation>
+        <kurtosis>-0.467885</kurtosis>
+        <skewness>-0.646499</skewness>
+        <entropy>0.931708</entropy>
+      </Blue>
+    </ChannelStatistics>
+    <ImageStatistics>
+      <Overall>
+        <min>0 (0)</min>
+        <max>255 (1)</max>
+        <mean>155.822 (0.611068)</mean>
+        <standardDeviation>44.4291 (0.174232)</standardDeviation>
+        <kurtosis>-0.179762</kurtosis>
+        <skewness>-0.729663</skewness>
+        <entropy>0.919268</entropy>
+      </Overall>
+    </ImageStatistics>
+    <RenderingIntent>Perceptual</RenderingIntent>
+    <Gamma>0.454545</Gamma>
+    <Chromaticity>
+      <redPrimary>(0.64,0.33)</redPrimary>
+      <greenPrimary>(0.3,0.6)</greenPrimary>
+      <bluePrimary>(0.15,0.06)</bluePrimary>
+      <whitePoint>(0.3127,0.329)</whitePoint>
+    </Chromaticity>
+    <BackgroundColor>white</BackgroundColor>
+    <BorderColor>srgb(223,223,223)</BorderColor>
+    <MatteColor>grey74</MatteColor>
+    <TransparentColor>black</TransparentColor>
+    <Interlace>None</Interlace>
+    <Intensity>Undefined</Intensity>
+    <Compose>Over</Compose>
+    <PageGeometry>650x650+0+0</PageGeometry>
+    <Dispose>Undefined</Dispose>
+    <Iterations>0</Iterations>
+    <Compression>JPEG</Compression>
+    <Quality>92</Quality>
+    <Orientation>Undefined</Orientation>
+    <Properties>
+      <signature>0b0cf69f58670964641014fde856ace3a4c7e9a4b0390776bcf4c173a9ac9824</signature>
+      <date>
+        <create>2016-05-04T10:56:12+02:00</create>
+        <modify>2016-05-03T18:35:49+02:00</modify>
+      </date>
+      <jpeg>
+        <colorspace>2</colorspace>
+        <samplingFactor>2x2,1x1,1x1</samplingFactor>
+      </jpeg>
+    </Properties>
+    <Artifacts>
+      <filename>./samples/sample.jpg</filename>
+      <verbose>true</verbose>
+    </Artifacts>
+    <Tainted>False</Tainted>
+    <Filesize>46.4KB</Filesize>
+    <NumberPixels>422K</NumberPixels>
+    <PixelsPerSecond>422.51GB</PixelsPerSecond>
+    <UserTime>0.000u</UserTime>
+    <ElapsedTime>0:01.000</ElapsedTime>
+    <Version>ImageMagick 6.9.2-4 Q16 x86_64 2015-11-27 http://www.imagemagick.org</Version>
+  </Image>
+</Images>
 
