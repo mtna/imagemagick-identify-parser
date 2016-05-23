@@ -51,14 +51,14 @@ optional arguments:
 ## iRODS Integration
 A specialized output format is supported by this utlity to facilitate integration with the [Integrated Rule-Oriented Data System (iRODS)]((http://www.irods.org)), an open source file storage virtualization and management platform. The `-t irods` option generates a `'%'` separated collection of key/value pairs compatible with the [msiString2KeyValPair](https://docs.irods.org/master/doxygen/keyValPairMS_8cpp.html#a91bf18da4b5141987c72b485595d4d87) iRODS [microservice](https://docs.irods.org/master/doxygen/). This string can then be parsed to automatically associate the image extracted properties as metadata for a file stored in iRODS.
 
-The utility is expected to be integrated in a iRODS rule using the the `iExeCmd` microservice. This requires a shell command to be installed in the `server/bin/cmd` directory under your iRODS server root. For example:
+The utility is expected to be integrated in a iRODS rule using the the `msiExecCmd` microservice. This requires a shell command to be installed in the `server/bin/cmd` directory under your iRODS server root. For example:
 
 ```
 #!/bin/sh
 python /git/imagemagick-identify-parser/ImageMagickIdentifyParser.py -t irods $1
 ```
 
-The iExecCmd output can be called for example when an image file is added or modified in the repository, and its output processed by msiString2KeyValPair, and the parse metadata attached to the resources using msiSetKeyValuePairsToObj. This is illustrated in the rule code below (e.g. to add to the /etc/irods/core.re file):
+The msiExecCmd output can be called for example when an image file is added or modified in the repository, and its output processed by msiString2KeyValPair, and the parse metadata attached to the resources using msiSetKeyValuePairsToObj. This is illustrated in the rule code below (e.g. to add to the /etc/irods/core.re file):
 
 ```
 ON($objPath like "/mtnaZone/demo/images\*.dcm" 
@@ -72,7 +72,7 @@ ON($objPath like "/mtnaZone/demo/images\*.dcm"
    {
    *metaPath = $objPath;
    *path = $filePath;
-   # call indentify.sh command
+   # call identify.sh command
    msiExecCmd("identify.sh", *path, "null", "null", "null", *result);
    # retrieve output
    msiGetStdoutInExecCmdOut(*result,*out);
