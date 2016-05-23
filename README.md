@@ -89,12 +89,12 @@ ON($objPath like "/mtnaZone/demo/images\*.dcm"
 
 <a name="contribute"></a>
 ## Contribute
-Putting this product together and maintaining the repository takes time and resources. We appreciate your support in any shape or form, in particular:
+Putting this product together and maintaining the repository takes time and resources. We welcome your support in any shape or form, in particular:
 
 * Let us know is you find any discrepancy or have suggestions towards enhancing the content or quality of the tool
 * Donations are appreciated and can be made through [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GKAYVJSBLN92E)
 * Contact us if you would like to fund this work and optionally be credited as a sponsor
-* Consider using our [services, products, or expertise](http://www.mtna.us)
+* Consider using our data/metadata [services, products, or expertise](http://www.mtna.us)
 
 <a name="license"></a>
 ## License
